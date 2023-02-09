@@ -1,0 +1,68 @@
+1# Lägg till en fungerande klocka
+
+2# Experiment with the grab interactable properties [Easy]
+Add a new grabbable object to your scene and experiment with the various properties of the XR Grab Interactable component, including:
+Movement type: Kinematic vs Instantaneous vs Velocity Tracking
+Smooth Position/Rotation Amount and Tighten Position
+Throw on Detach properties
+
+3# Add a magnifying glass [Difficult]
+Add a functional magnifying glass to your scene that you can use to pick up and examine objects: 
+You could use a Camera Render Texture similar to the way the mirror works.
+Don’t worry if the ray gets in the way - that will be resolved when we can toggle the rays on and off.
+
+4# Add a notebook that swings open [Expert] 
+Add a notebook with a front cover that swings open when you grab it:
+Hint: The Notebook_Cover needs a hinge joint with its Connected Body property set to the notebook’s Rigidbody.
+If you want, try adding some text to the notebook. 
+
+
+4# Add rearrangeable art [Medium]
+Allow the user to swap the position of art hanging on the wall:
+To make a simple hook, create an empty object with a Socket Interactor component, then create a primitive cube child object, scaled and rotated appropriately, to represent the mesh.
+To make the pieces of art hang at the correct height, you may need to add an Attach Transform located at the position on the frame the art would hang from. 
+
+5# Add rearrangeable books [Difficult]
+Add books to a bookshelf that can be rearranged neatly in any order the user wants: 
+In order to get the books to appear at the orientation you want, try creating an empty object with the correct orientation, then making the book object a child object. 
+
+6# Add a phone that plays video [Easy] 
+Make a phone that plays a video when you press the trigger:
+You can find phone prefabs from the Course Library > Prefabs > Objects > Electronics folder.
+You will need to make a new separate “screen” child object with a material similar to the way the TV screen is set up.
+Bonus:  Try making the phone cycle through multiple videos using the Play Video > NextClip () function. 
+
+7# Add a functioning flashlight [Medium]
+Add a working flashlight into the scene that toggles on and off when you press the trigger, including making a clicking sound to provide audio feedback:
+You will need to add a child SpotLight object to the flashlight.
+Try using the ToggleLight > Flip () function to flip the light on and off. 
+
+8# Add a functional lighter and candle that can be lit with it [Difficult]
+Add a lighter to the scene that produces a flame when you activate it. If the flame gets close to a candle, that candle can be lit. 
+You can use the Particle_Flame Prefab
+On the candle, use a trigger collider and the OnTrigger script to detect when an object with a particular tag has entered the trigger
+Bonus:  Make the flame go out when it is shaken using the OnVelocity script
+
+4.  Add a dart gun or stapler projectile [Expert]
+Add a dart gun that shoots darts or a stapler that shoots staples when you press the trigger:
+Locate the prefabs for the objects and projectiles in the Course Library > Prefabs > Objects > Launchers folders
+Use the LaunchProjectile script provided in the Course Library
+If you want, use the DestroyObject script provided in the Course Library to make the projectile disappear after a certain amount of time.
+Bonus:  Make the stapler swing open with a hinge joint
+Bonus:  Add sounds for when the object is launched
+
+5.  Add a functioning polaroid camera  [Expert] [Requires Programming]
+Add a functioning polaroid camera that allows you to preview on a viewfinder screen and print a photo using the trigger:
+For the viewfinder screen, look at how the mirror is set up with a render texture.
+Look at the documentation for Camera.Render(). 
+Don’t worry if the camera is currently rendering your rays for now - we’ll learn how to hide your rays in the next tutorial.
+If you want some help, download the example Polaroid and Photo scripts 
+
+3.  Add hinges to cabinet doors [Expert]
+Allow the user to open cabinet doors or chest lids using Unity’s physics hinges:
+You will need to add a Hinge Joint and rigidbody to the door, and customize its angular limits
+You will need to add an XR Grab Interactable component to the handle and may want to add a Fixed Joint connected to your door’s rigidbody.
+Make sure your door’s colliders do not overlap any other colliders, which could cause it to get stuck.
+Warning: joints are very tricky and can be frustrating. 
+
+
