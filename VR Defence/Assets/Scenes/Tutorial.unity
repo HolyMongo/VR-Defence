@@ -3540,6 +3540,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR Device Simulator
       objectReference: {fileID: 0}
+    - target: {fileID: 3838364750048534708, guid: ee67ab44e6c0fdf49890ab8d17cc8e5b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3838364750048534714, guid: ee67ab44e6c0fdf49890ab8d17cc8e5b,
         type: 3}
       propertyPath: m_RootOrder
