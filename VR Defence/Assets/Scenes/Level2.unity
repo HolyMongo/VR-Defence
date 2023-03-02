@@ -522,7 +522,7 @@ GameObject:
   - component: {fileID: 131749094}
   m_Layer: 0
   m_Name: XR Rig
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3186,7 +3186,7 @@ GameObject:
   - component: {fileID: 1339329897}
   m_Layer: 0
   m_Name: -- XR --
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5439,5 +5439,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawnpositions
       objectReference: {fileID: 0}
+    - target: {fileID: 7719491640999765339, guid: 945938f4378314042b5e52577330888d,
+        type: 3}
+      propertyPath: enemyTypes.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7719491640999765339, guid: 945938f4378314042b5e52577330888d,
+        type: 3}
+      propertyPath: enemyTypes.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 986ccf696e219cb4a977d87424c78329,
+        type: 2}
+    - target: {fileID: 7719491640999765339, guid: 945938f4378314042b5e52577330888d,
+        type: 3}
+      propertyPath: enemyTypes.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 21c30d321096c5a4180c345be828190c,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 945938f4378314042b5e52577330888d, type: 3}
