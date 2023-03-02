@@ -5,24 +5,32 @@ using UnityEngine;
 public class SpawnEnemies : MonoBehaviour
 {
     [SerializeField] List<Transform> spawnPos;
+    [SerializeField] List<Transform> count;
     [SerializeField] GameObject enemy;
 
-    [SerializeField] float spawnerIntervals = 5;
-    float Timer;
+    [SerializeField] float spawnerIntervals = 2;
+    GameObject player;
 
     private void Start()
     {
-        Timer = spawnerIntervals;
+        player = GameObject.Find("XR Rig");
+        StartCoroutine(Spawn());
     }
-    void FixedUpdate()
+    void FixedUpdate() // två problem som måste fixas. Om fiender är mer än x så ska inga mer spawnas
     {
-        Timer -= Time.deltaTime;
-        if (Timer <= 0)
+       
+    }
+   private IEnumerator Spawn()
+    {
+        while(player != null)
         {
-            Timer = spawnerIntervals;
             int spawnPosition = Random.Range(0, spawnPos.Count);
-
-            Instantiate(enemy, spawnPos[spawnPosition].position, Quaternion.identity);
-        }
+            if (count.Count < 40)
+            {
+                Instantiate(enemy, spawnPos[spawnPosition].position, Quaternion.identity);
+                count.Add(enemy.transform);
+            }
+            yield return new WaitForSeconds(spawnerIntervals);
+        }    
     }
 }
