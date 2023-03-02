@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2382282718410569258
+--- !u!1 &2702840749080243167
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,46 +8,124 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7195893638825224279}
-  - component: {fileID: 2645415292733870048}
-  - component: {fileID: 2166981036600689608}
+  - component: {fileID: 4399985873052491163}
   m_Layer: 0
-  m_Name: NerfGun_Trigger
+  m_Name: Attach
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7195893638825224279
+--- !u!4 &4399985873052491163
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2382282718410569258}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.000025525866, y: 0.09986776, z: -0.037849847}
-  m_LocalScale: {x: 0.85847837, y: 0.85847837, z: 0.85847837}
+  m_GameObject: {fileID: 2702840749080243167}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.039, y: 0.094, z: -0.121}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 4032587891230301846}
+  m_Father: {fileID: 7155068949155444113}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2962574325038991322
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7685683417089074009}
+  - component: {fileID: 6845091945155466835}
+  m_Layer: 0
+  m_Name: Barrel_Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7685683417089074009
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2962574325038991322}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 483854251225972805}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &2645415292733870048
+--- !u!65 &6845091945155466835
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2962574325038991322}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.09521458, y: 0.068832174, z: 0.34391138}
+  m_Center: {x: 0.0000003580014, y: 0.16647455, z: -0.019806858}
+--- !u!1 &3571389421280599122
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 483854251225972805}
+  - component: {fileID: 7768990178151176175}
+  - component: {fileID: 2197054058019600451}
+  m_Layer: 0
+  m_Name: NerfGun
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &483854251225972805
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3571389421280599122}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0.02345241, z: 0}
+  m_LocalScale: {x: 0.85847837, y: 0.85847837, z: 0.85847837}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4133876521504036059}
+  - {fileID: 7685683417089074009}
+  m_Father: {fileID: 7155068949155444113}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &7768990178151176175
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2382282718410569258}
-  m_Mesh: {fileID: -7434031223158639860, guid: 49344d184707a6d488a27aa72f9df271, type: 3}
---- !u!23 &2166981036600689608
+  m_GameObject: {fileID: 3571389421280599122}
+  m_Mesh: {fileID: -5375602194484012040, guid: 49344d184707a6d488a27aa72f9df271, type: 3}
+--- !u!23 &2197054058019600451
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2382282718410569258}
+  m_GameObject: {fileID: 3571389421280599122}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -83,7 +161,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &3015367994262159680
+--- !u!1 &7494053415444950827
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -91,54 +169,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7918228463848783836}
-  - component: {fileID: 6123069578236726767}
-  m_Layer: 0
-  m_Name: Handle_Collider
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7918228463848783836
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3015367994262159680}
-  m_LocalRotation: {x: 0.22987992, y: 0, z: 0, w: 0.97321904}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 5912020138443909954}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 26.58, y: 0, z: 0}
---- !u!65 &6123069578236726767
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3015367994262159680}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.07827114, y: 0.116274625, z: 0.0829814}
-  m_Center: {x: -0.0016939779, y: -0.016515274, z: -0.15027215}
---- !u!1 &4376779752181236780
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4032587891230301846}
-  - component: {fileID: 1086827014}
-  - component: {fileID: 1086827013}
+  - component: {fileID: 7155068949155444113}
+  - component: {fileID: 6106115967216189697}
+  - component: {fileID: 6106115967216189698}
   m_Layer: 0
   m_Name: Launcher_DartGun
   m_TagString: Untagged
@@ -146,31 +179,31 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4032587891230301846
+--- !u!4 &7155068949155444113
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4376779752181236780}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_GameObject: {fileID: 7494053415444950827}
+  m_LocalRotation: {x: 0.06419524, y: -0.06475119, z: -0.7009255, w: 0.7073824}
+  m_LocalPosition: {x: -0.19303522, y: 1.786618, z: 1.827451}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 5912020138443909954}
-  - {fileID: 7195893638825224279}
-  - {fileID: 7616338797390952092}
+  - {fileID: 483854251225972805}
+  - {fileID: 3990676615631668048}
+  - {fileID: 4399985873052491163}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &1086827014
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -39.413}
+--- !u!54 &6106115967216189697
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4376779752181236780}
+  m_GameObject: {fileID: 7494053415444950827}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -180,13 +213,13 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 2
---- !u!114 &1086827013
+--- !u!114 &6106115967216189698
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4376779752181236780}
+  m_GameObject: {fileID: 7494053415444950827}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
@@ -295,7 +328,7 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
---- !u!1 &7290579987835402069
+--- !u!1 &8481080313117498669
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -303,48 +336,46 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5912020138443909954}
-  - component: {fileID: 4570510927836200168}
-  - component: {fileID: 5386526263128232772}
+  - component: {fileID: 3990676615631668048}
+  - component: {fileID: 8073598639279006951}
+  - component: {fileID: 5381768410815473871}
   m_Layer: 0
-  m_Name: NerfGun
+  m_Name: NerfGun_Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5912020138443909954
+--- !u!4 &3990676615631668048
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7290579987835402069}
+  m_GameObject: {fileID: 8481080313117498669}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0.02345241, z: 0}
+  m_LocalPosition: {x: 0.000025525866, y: 0.09986776, z: -0.037849847}
   m_LocalScale: {x: 0.85847837, y: 0.85847837, z: 0.85847837}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 7918228463848783836}
-  - {fileID: 4473271001226987614}
-  m_Father: {fileID: 4032587891230301846}
-  m_RootOrder: 0
+  m_Children: []
+  m_Father: {fileID: 7155068949155444113}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &4570510927836200168
+--- !u!33 &8073598639279006951
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7290579987835402069}
-  m_Mesh: {fileID: -5375602194484012040, guid: 49344d184707a6d488a27aa72f9df271, type: 3}
---- !u!23 &5386526263128232772
+  m_GameObject: {fileID: 8481080313117498669}
+  m_Mesh: {fileID: -7434031223158639860, guid: 49344d184707a6d488a27aa72f9df271, type: 3}
+--- !u!23 &5381768410815473871
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7290579987835402069}
+  m_GameObject: {fileID: 8481080313117498669}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -380,7 +411,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &8160279849796387032
+--- !u!1 &9035897781324130887
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -388,71 +419,40 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7616338797390952092}
+  - component: {fileID: 4133876521504036059}
+  - component: {fileID: 19363815330785000}
   m_Layer: 0
-  m_Name: Attach
+  m_Name: Handle_Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7616338797390952092
+--- !u!4 &4133876521504036059
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8160279849796387032}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.039, y: 0.094, z: -0.121}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4032587891230301846}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &9052347093693295837
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4473271001226987614}
-  - component: {fileID: 739697297627397460}
-  m_Layer: 0
-  m_Name: Barrel_Collider
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4473271001226987614
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9052347093693295837}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_GameObject: {fileID: 9035897781324130887}
+  m_LocalRotation: {x: 0.22987992, y: 0, z: 0, w: 0.97321904}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 5912020138443909954}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &739697297627397460
+  m_Father: {fileID: 483854251225972805}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 26.58, y: 0, z: 0}
+--- !u!65 &19363815330785000
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9052347093693295837}
+  m_GameObject: {fileID: 9035897781324130887}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.09521458, y: 0.068832174, z: 0.34391138}
-  m_Center: {x: 0.0000003580014, y: 0.16647455, z: -0.019806858}
+  m_Size: {x: 0.07827114, y: 0.116274625, z: 0.0829814}
+  m_Center: {x: -0.0016939779, y: -0.016515274, z: -0.15027215}

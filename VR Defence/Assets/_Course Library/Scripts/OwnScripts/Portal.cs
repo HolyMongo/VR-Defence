@@ -11,8 +11,7 @@ public class Portal : MonoBehaviour
     {
         SceneManager.LoadScene(teleport);
     }
-
-    private void OnControllerColliderHit(ControllerColliderHit hit)
+    private void OnTriggerEnter(Collider other)
     {
         SceneManager.LoadScene(teleport);
     }
