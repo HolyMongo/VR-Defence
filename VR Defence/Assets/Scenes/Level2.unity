@@ -5563,6 +5563,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7719491640999765339, guid: 945938f4378314042b5e52577330888d,
         type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 1768590126065099041, guid: 94202a000d7d2804486ac69213a578d7,
+        type: 3}
+    - target: {fileID: 7719491640999765339, guid: 945938f4378314042b5e52577330888d,
+        type: 3}
       propertyPath: enemyTypes.Array.size
       value: 2
       objectReference: {fileID: 0}
