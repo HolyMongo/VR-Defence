@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DealDamageOnHit : MonoBehaviour
 {
-    [SerializeField] weaponSO weapon;
+    [SerializeField] weaponsSO weapon;
     private void Start()
     {
         

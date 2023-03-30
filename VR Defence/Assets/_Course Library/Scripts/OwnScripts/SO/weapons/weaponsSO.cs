@@ -3,9 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Weapon", menuName = "Weapon Creation/New Weapon")]
-public class weaponSO : ScriptableObject
+public class weaponsSO : ScriptableObject
 {
-    [SerializeField] float attack;
+    [SerializeField] private float attack;
+
+    //public float Attack
+    //{
+    //    get
+    //    {
+    //        return attack;
+    //    }
+    //}
 
     public float Attack()
     {

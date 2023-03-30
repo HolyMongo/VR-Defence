@@ -21,4 +21,8 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene(_scenes[0]);
     }
+    public void PlayLevel2()
+    {
+        SceneManager.LoadScene(_scenes[2]);
+    }
 }
