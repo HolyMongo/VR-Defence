@@ -129,7 +129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 500
-  chase: 3
+  chase: 6
 --- !u!114 &4735433776374609425
 MonoBehaviour:
   m_ObjectHideFlags: 0

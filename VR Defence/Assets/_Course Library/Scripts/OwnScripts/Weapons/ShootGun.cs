@@ -12,6 +12,8 @@ public class ShootGun : MonoBehaviour
     [SerializeField] Transform bulletExitAndDirection;
     float rayDistance = 10f;
     [SerializeField] LayerMask targetLayer;
+
+    [SerializeField] private GameObject raycastLine;
     void Start()
     {
         damage = weapon.Attack();
@@ -26,13 +28,16 @@ public class ShootGun : MonoBehaviour
     public void HitObject()
     {
         RaycastHit hit;
-        
+     
         if (Physics.Raycast(bulletExitAndDirection.position, bulletExitAndDirection.forward, out hit, rayDistance))
         {
             GameObject enemy = hit.transform.gameObject;
             HealthAndAttack enemyHealth = enemy.GetComponent<HealthAndAttack>();
             enemyHealth.TakeDamage(damage);
             Debug.Log("hit an object");
+
+
         }
     }
+    
 }

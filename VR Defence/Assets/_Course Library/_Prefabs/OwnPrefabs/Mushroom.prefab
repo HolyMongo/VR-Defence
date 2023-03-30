@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3287568985553778770}
   - component: {fileID: 7465479053016034231}
   - component: {fileID: 5126663536665940855}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EyeLid.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 2548535955648727791}
   - component: {fileID: 6117465496069888854}
   - component: {fileID: 1090494635155285603}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Torus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 8631881496305506289}
   - component: {fileID: 4411645939374191651}
   - component: {fileID: 5680355329985304798}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EyeLid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,7 +260,7 @@ GameObject:
   - component: {fileID: 2069306054469076556}
   - component: {fileID: 63267903782822351}
   - component: {fileID: 4382023616235173328}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -343,7 +343,7 @@ GameObject:
   - component: {fileID: 2004553423969872381}
   - component: {fileID: 6994604534870719811}
   - component: {fileID: 7001032360979402967}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WhiteShine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -426,7 +426,7 @@ GameObject:
   - component: {fileID: 1299189025075304508}
   - component: {fileID: 44165493157149669}
   - component: {fileID: 5246996853165868609}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EyeLid.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -509,7 +509,7 @@ GameObject:
   - component: {fileID: 3941874894247328931}
   - component: {fileID: 7069973873552836870}
   - component: {fileID: 1521120119759278834}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EyeBall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -592,7 +592,7 @@ GameObject:
   - component: {fileID: 3196209969828103485}
   - component: {fileID: 3208920433048654366}
   - component: {fileID: 1951889459119153367}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sphere.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -675,7 +675,7 @@ GameObject:
   - component: {fileID: 5024241786304797487}
   - component: {fileID: 2601485818959895732}
   - component: {fileID: 2944048222172579102}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BigEyeBall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -760,7 +760,7 @@ GameObject:
   - component: {fileID: 8423703433081602296}
   - component: {fileID: 3191382831116652434}
   - component: {fileID: 8816872452857617403}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Mushroom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
