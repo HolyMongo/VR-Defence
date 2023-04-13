@@ -9,6 +9,8 @@ public class HealthAndAttack : MonoBehaviour
     float hp;
     float attack;
     float speed;
+
+    PlayerHealth playerHp;
     void Start()
     {
         hp = enemy.Hp();
@@ -42,6 +44,7 @@ public class HealthAndAttack : MonoBehaviour
         {
             GameObject player = collision.collider.gameObject;
             Debug.Log("Hit player");
+            playerHp = player.GetComponent<PlayerHealth>();
             /*
             PlayerHp playerhp = player.GetComponent<PlayerHp>();
             playerhp.Hp -= attack;
