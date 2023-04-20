@@ -34687,7 +34687,7 @@ MonoBehaviour:
   count: []
   enemyTypes:
   - {fileID: 11400000, guid: 986ccf696e219cb4a977d87424c78329, type: 2}
-  enemy: {fileID: 6746253906434095054, guid: b097658c8d0c64c47b9f41b50ceb8425, type: 3}
+  enemy: {fileID: 6746253906434095054, guid: b9bd7b6632ee4224e989169e379dfcf1, type: 3}
   spawnerIntervals: 1
 --- !u!1 &7719491639542421991
 GameObject:
