@@ -44,7 +44,8 @@ public class HealthAndAttack : MonoBehaviour
         {
             GameObject player = collision.collider.gameObject;
             Debug.Log("Hit player");
-            playerHp = player.GetComponent<PlayerHealth>(attack);
+            playerHp = player.GetComponent<PlayerHealth>();
+            playerHp.TakeDamage(attack);
             /*
             PlayerHp playerhp = player.GetComponent<PlayerHp>();
             playerhp.Hp -= attack;
