@@ -34,35 +34,37 @@ public class ElevatorPuzzle : MonoBehaviour
        
         if(count >= maxCount)
         {
-            delay += Time.deltaTime;
-          if(delay >= startDelay)
-            {
-                obj.transform.position += speed * Time.deltaTime;
-            }
+            Invoke("MoveUp", startDelay);
+          
+               
+            
 
           if(obj.transform.position.y >= endPos.y)
-            {
-                count = 0;
-                delay = 0;
+            {                        
                 obj.transform.position = endPos;
                 foreach (Transform child in transform)
                 {
-                    GameObject.Destroy(child.gameObject);
-
+                    //GameObject.Destroy(child.gameObject);
+                   
+                    child.transform.localPosition = new Vector3(0, 2, 2);
 
                 }
-                delay += Time.deltaTime;
-                if (delay >= startDelay)
-                {
-                    obj.transform.position += speed * Time.deltaTime;
-                    if (obj.transform.position.y <= startPos.y)
-                    {
-                        obj.transform.position = startPos;
-                    }
-                }
-               
+             
             }
           
+        }
+        else if(count <= maxCount)
+        {
+           
+                Invoke("MoveDown", startDelay);
+            
+              
+
+            if (obj.transform.position.y <= startPos.y)
+            {
+
+                obj.transform.position = startPos;
+            }
         }
     }
     private void OnCollisionEnter(Collision collision)
@@ -88,4 +90,22 @@ public class ElevatorPuzzle : MonoBehaviour
     {
         yield return new WaitForSeconds(5); 
     }
+
+    public void MoveUp()
+    {
+        if (obj.transform.position.y != endPos.y)
+        {
+            obj.transform.position += speed * Time.deltaTime;
+        }
+        
+    }
+    public void MoveDown()
+    {
+        if (obj.transform.position.y != startPos.y)
+        {
+            obj.transform.position -= speed * Time.deltaTime;
+        }
+      
+    }
+
 }
