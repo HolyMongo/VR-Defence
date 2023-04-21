@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
 
 public class ElevatorPuzzle : MonoBehaviour
 {
@@ -9,18 +11,30 @@ public class ElevatorPuzzle : MonoBehaviour
 
 
     [SerializeField] private float startDelay = 5;
-    private float delay = 0;
+  
     //Reference to the obj target
     [SerializeField] private GameObject obj;
     [SerializeField] private Vector3 startPos;
     [SerializeField] private Vector3 endPos;
     [SerializeField] private Vector3 speed;
 
+
+
+    //Reference timer text
+    [SerializeField] private TMP_Text timerText;
+    private float timer;
+    private float timer2 = 0;
+
+    //Reference count text
+    [SerializeField] private TMP_Text countText;
+    private float countNumber = 0;
+
     private void Awake()
     {
+        timer = startDelay;
         foreach (var child in transform)
         {
-            maxCount++;
+            maxCount++;     
         }
       
     }
@@ -28,13 +42,24 @@ public class ElevatorPuzzle : MonoBehaviour
     {
         Debug.Log(maxCount);
         Debug.Log("In maxCount");
+        timerText.text = timer.ToString();
+        countText.text = countNumber + "/" + maxCount;
     }
     void Update()
     {
        
         if(count >= maxCount)
         {
-            Invoke("MoveUp", startDelay);
+           
+            if (timer2 != startDelay)
+            {
+                Invoke("StartDelay", 1);
+            }
+            if(timer2 >= startDelay)
+            {
+                Invoke("MoveUp", 1);
+            }
+          
           
                
             
@@ -62,7 +87,9 @@ public class ElevatorPuzzle : MonoBehaviour
 
             if (obj.transform.position.y <= startPos.y)
             {
-
+                timerText.text = "0";
+                timer2 = 0;
+                timer = startDelay;
                 obj.transform.position = startPos;
             }
         }
@@ -72,7 +99,13 @@ public class ElevatorPuzzle : MonoBehaviour
         if(collision.collider.CompareTag("Puzzle"))
         {
             count++;
+            countNumber++;
+            countText.text = countNumber + "/" + maxCount;
             Debug.Log("Count increased");
+            if(count >= maxCount)
+            {
+                timerText.text = "5";           
+            }
         }
     }
     private void OnCollisionExit(Collision collision)
@@ -80,7 +113,13 @@ public class ElevatorPuzzle : MonoBehaviour
         if (collision.collider.CompareTag("Puzzle"))
         {
             count--;
+            countNumber--;
+            countText.text = countNumber + "/" + maxCount;
             Debug.Log("Count decreased");
+            if (count >= maxCount)
+            {
+                timerText.text = "0";           
+            }
         }
     }
 
@@ -106,6 +145,18 @@ public class ElevatorPuzzle : MonoBehaviour
             obj.transform.position -= speed * Time.deltaTime;
         }
       
+    }
+
+    public void StartDelay()
+    {
+       
+        if(timer2 <= startDelay)
+        {
+            Debug.Log("Increased timer");
+            timer -= Time.deltaTime;
+            timer2 += Time.deltaTime;
+            timerText.text = timer.ToString("F0");
+        }
     }
 
 }
