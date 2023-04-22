@@ -39,7 +39,7 @@ public class FollowPlayer : MonoBehaviour
             float toClose = Vector2.Distance(playerPos.transform.position, transform.position);
             if (toClose <= chase)
             {
-                rB.velocity = new Vector3(moveDir.x, rB.velocity.y, moveDir.y).normalized * hAA.GetEnemySO().Speed() * Time.deltaTime;
+                rB.velocity = new Vector3(moveDir.x, rB.velocity.y, moveDir.y).normalized * hAA.GetEnemySO().Speed();
             }
         }
     }

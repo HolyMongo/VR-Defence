@@ -5,6 +5,7 @@ using UnityEngine;
 public class HealthAndAttack : MonoBehaviour
 {
     [SerializeField] EnemySO enemy;
+    SpawnEntity spawnEntity;
 
     float hp;
     float attack;
@@ -16,6 +17,7 @@ public class HealthAndAttack : MonoBehaviour
         hp = enemy.Hp();
         attack = enemy.Attack();
         speed = enemy.Speed();
+        spawnEntity = GameObject.Find("EnemyBase").GetComponent<SpawnEntity>();
     }
 
     public EnemySO GetEnemySO()
@@ -33,10 +35,14 @@ public class HealthAndAttack : MonoBehaviour
         Debug.Log(hp);
         if (hp <= 0)
         {
-            Destroy(this.gameObject);
+            Die();
         }
     }
-
+    private void Die()
+    {
+        Destroy(gameObject);
+        spawnEntity.OnEnemyDeath(transform);
+    }
 
     private void OnCollisionEnter(Collision collision)
     {
