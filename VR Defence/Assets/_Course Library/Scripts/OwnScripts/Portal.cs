@@ -9,10 +9,18 @@ public class Portal : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        SceneManager.LoadScene(teleport);
+        if(collision.collider.CompareTag("Player"))
+        {
+            SceneManager.LoadScene(teleport);
+        }
+      
     }
     private void OnTriggerEnter(Collider other)
     {
-        SceneManager.LoadScene(teleport);
+        if (other.CompareTag("Player"))
+        {
+            SceneManager.LoadScene(teleport);
+        }
+       
     }
 }

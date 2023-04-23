@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 57143
+  controlID: 62626
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 57144
+  controlID: 62627
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -168,7 +168,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 57145
+  controlID: 62628
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -226,24 +226,24 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 1270.6666}
-      m_SelectedIDs: 862df9ff8edff8ff24fff8ff
-      m_LastClickedID: -458972
-      m_ExpandedIDs: fc0af9fff60cf9ffd213f9ff1840f9ffcc40f9ff4e61f9ff8a9ef9ff3e9ff9ff56a3f9ff82a9f9ff8ca9f9ff8cb4f9ff18e9f9ff6eecf9ff522afaff062bfaff9241faff9c41faff6afefafff017fbff1418fbffc818fbff021dfbffae25fbffb825fbff9c76fbffc276fbffb47bfbff8a81fbff8a82fbff228bfbff088dfbffe890fbff2ae7fbff02eefbff40f9fbff88fdfbffb297fcff509cfcff620efdff640efdff6a0efdffbc84fefff88bfeff14f3fffff4faffff0cfbffff007500002e75000086df0000aae0000034e20000b0030100d40401005e060100740a0100980b0100220d01009c1e0100aa1f010020210100e464010026650100f265010068670100ca990100d89a0100f09b01004e9c0100d89c010060cb010076cb0100b8cb010084cc01009ccd0100facd010084ce0100
+      scrollPos: {x: 0, y: 1366.6666}
+      m_SelectedIDs: 7260f8ff
+      m_LastClickedID: -499598
+      m_ExpandedIDs: 7260f8fffc0af9fff60cf9ffd213f9ff1840f9ffcc40f9ff4e61f9ff8a9ef9ff3e9ff9ff56a3f9ff82a9f9ff8ca9f9ff8cb4f9ff18e9f9ff6eecf9ff522afaff062bfaff9241faff9c41faff6afefafff017fbff1418fbffc818fbff021dfbffae25fbffb825fbff9c76fbffc276fbffb47bfbff8a81fbff8a82fbff228bfbff088dfbffe890fbff2ae7fbff02eefbff40f9fbff88fdfbffb297fcff509cfcff620efdff640efdff6a0efdffbc84fefff88bfeff14f3fffff4faffff0cfbffff007500002e75000086df0000aae0000034e20000b0030100d40401005e060100740a0100980b0100220d01009c1e0100aa1f010020210100e464010026650100f265010068670100ca990100d89a0100f09b01004e9c0100d89c010060cb010076cb0100b8cb010084cc01009ccd0100facd010084ce0100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: RealMushroomTWO(Clone)
-        m_OriginalName: RealMushroomTWO(Clone)
+        m_Name: XR Rig
+        m_OriginalName: XR Rig
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -470748
+        m_UserData: -442824
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 4
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 5}
       m_SearchString: 
@@ -528,9 +528,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 3.8646674, y: 25.17, z: 49.56034}
+    m_Target: {x: 4.191392, y: 25.25, z: 38.109047}
     speed: 2
-    m_Value: {x: 3.8646674, y: 25.17, z: 49.56034}
+    m_Value: {x: 4.191392, y: 25.25, z: 38.109047}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -577,13 +577,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.3893453, y: -0.06643632, z: 0.02975749, w: -0.9186047}
+    m_Target: {x: -0.18980876, y: -0.5987525, z: 0.15116829, w: -0.76377654}
     speed: 2
-    m_Value: {x: -0.3877818, y: -0.067835115, z: 0.030228639, w: -0.91875464}
+    m_Value: {x: -0.18928453, y: -0.6008194, z: 0.15168105, w: -0.76169574}
   m_Size:
-    m_Target: 2.9702075
+    m_Target: 2.0571504
     speed: 2
-    m_Value: 2.8423038
+    m_Value: 1.968565
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -810,23 +810,23 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/_Course Library/_Prefabs/OwnPrefabs/Enemies
+    - Assets
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 44
   m_LastFolders:
-  - Assets/_Course Library/_Prefabs/OwnPrefabs/Enemies
+  - Assets
   m_LastFoldersGridSize: 44
   m_LastProjectPath: C:\Users\vidar.edlund\Documents\Unity projects\VR-Defence\VR
     Defence
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 112.99997}
-    m_SelectedIDs: b6c80100
-    m_LastClickedID: 116918
-    m_ExpandedIDs: 00000000e87c0000ea7c0000ec7c0000ee7c0000f07c0000f27c0000f47c0000f67c0000f87c00000c7d0000887d0000b87d000092ad000094ad000096ad000098ad000000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 0c7d0000
+    m_LastClickedID: 32012
+    m_ExpandedIDs: 00000000e87c0000ea7c0000ec7c0000ee7c0000f07c0000f27c0000f47c0000f67c0000f87c0000887d0000b87d000092ad000094ad000096ad000098ad000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -879,8 +879,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 862df9ff8edff8ff24fff8ff
-    m_LastClickedInstanceID: -447098
+    m_SelectedInstanceIDs: 7260f8ff
+    m_LastClickedInstanceID: -499598
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000ea6200004c63000016820000ee8600003887000000000000
     m_RenameOverlay:
@@ -906,7 +906,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 37.999985}
     m_GridSize: 44
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207

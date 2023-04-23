@@ -57,10 +57,11 @@ public class PointEnemy : MonoBehaviour
     {
         if (hAA != null)
         {
-            transform.LookAt(playerPos.transform);
+          
             float toClose = Vector3.Distance(playerPos.transform.position, transform.position);
             if (toClose <= chase)
             {
+                transform.LookAt(playerPos.transform);
                 isChasing = true;
                 Vector3 moveDir = playerPos.transform.position - transform.position;
                 rB.velocity = new Vector3(moveDir.x, rB.velocity.y, moveDir.z).normalized * speed;
