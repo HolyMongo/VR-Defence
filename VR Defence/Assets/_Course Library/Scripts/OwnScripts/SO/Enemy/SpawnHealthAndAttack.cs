@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HealthAndAttack : MonoBehaviour
+public class SpawnHealthAndAttack : MonoBehaviour
 {
     [SerializeField] EnemySO enemy;
-  //  SpawnEntity spawnEntity;
+    SpawnEntity spawnEntity;
 
     float hp;
     float attack;
@@ -17,7 +17,7 @@ public class HealthAndAttack : MonoBehaviour
         hp = enemy.Hp();
         attack = enemy.Attack();
         speed = enemy.Speed();
-      //  spawnEntity = GameObject.Find("EnemyBase").GetComponent<SpawnEntity>();
+        spawnEntity = GameObject.Find("EnemyBase").GetComponent<SpawnEntity>();
     }
 
     public EnemySO GetEnemySO()
@@ -41,7 +41,7 @@ public class HealthAndAttack : MonoBehaviour
     private void Die()
     {
         Destroy(gameObject);
-     //   spawnEntity.OnEnemyDeath(transform);
+        spawnEntity.OnEnemyDeath(transform);
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -60,6 +60,6 @@ public class HealthAndAttack : MonoBehaviour
     }
     void Update()
     {
-        
+
     }
 }

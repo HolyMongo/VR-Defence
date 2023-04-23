@@ -15,6 +15,8 @@ public class SpawnEntity : MonoBehaviour
     [SerializeField] List<Transform> currentEnemies;
     private int currentEnemyCount = 0;
 
+
+    [SerializeField] private float yPosition = 0f;
     private void Update()
     {
         if (!spawnEnabled)
@@ -112,7 +114,7 @@ public class SpawnEntity : MonoBehaviour
         while (!foundValidPosition && numAttempts < 10)
         {
             randomPosition = centroid + Random.insideUnitSphere * maxRadius;
-            randomPosition.y = 0f;
+            randomPosition.y = yPosition;
 
             if (IsPositionInsideGizmos(randomPosition))
             {

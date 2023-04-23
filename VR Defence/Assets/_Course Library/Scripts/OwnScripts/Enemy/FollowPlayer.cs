@@ -13,11 +13,6 @@ public class FollowPlayer : MonoBehaviour
     {
         playerPos = GameObject.Find("XR Rig");
         rB = GetComponent<Rigidbody>();
-    }
-
-    
-    void Update()
-    {
         if (hAA == null)
         {
             try
@@ -30,11 +25,26 @@ public class FollowPlayer : MonoBehaviour
                 throw;
             }
         }
+    }
+
+
+    void Update()
+    {
+        ChasePlayer();
+
+    }
+    private void OnCollisionEnter(Collision collision) // Add enemy damage player?
+    {
+
+    }
+
+    public void ChasePlayer()
+    {
         if (hAA != null)
         {
 
             //Vector3 moveDir = playerPos.transform.position - transform.position;
-            
+
             Vector2 moveDir = new Vector2(playerPos.transform.position.x - transform.position.x, playerPos.transform.position.z - transform.position.z);
             float toClose = Vector2.Distance(playerPos.transform.position, transform.position);
             if (toClose <= chase)
@@ -43,8 +53,11 @@ public class FollowPlayer : MonoBehaviour
             }
         }
     }
-    private void OnCollisionEnter(Collision collision) // Add enemy damage player?
+
+    void OnDrawGizmosSelected()
     {
-        
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, chase);
     }
 }
+

@@ -429,7 +429,7 @@ GameObject:
   - component: {fileID: 6114311787286982623}
   - component: {fileID: 3168698692946378865}
   m_Layer: 7
-  m_Name: RealMushroom2
+  m_Name: RealMushroomEnemy1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
