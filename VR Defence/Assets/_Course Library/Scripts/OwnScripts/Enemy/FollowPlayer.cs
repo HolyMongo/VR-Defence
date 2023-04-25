@@ -9,6 +9,7 @@ public class FollowPlayer : MonoBehaviour
     Rigidbody rB;
     [SerializeField] float speed = 5;
     [SerializeField] float chase = 3;
+    private bool isChasing = false;
     void Start()
     {
         playerPos = GameObject.Find("XR Rig");
@@ -30,6 +31,10 @@ public class FollowPlayer : MonoBehaviour
 
     void Update()
     {
+        if (!isChasing)
+        {
+        Wander();
+        }
         ChasePlayer();
 
     }
@@ -43,15 +48,23 @@ public class FollowPlayer : MonoBehaviour
         if (hAA != null)
         {
 
-            //Vector3 moveDir = playerPos.transform.position - transform.position;
-
-            Vector2 moveDir = new Vector2(playerPos.transform.position.x - transform.position.x, playerPos.transform.position.z - transform.position.z);
-            float toClose = Vector2.Distance(playerPos.transform.position, transform.position);
+            float toClose = Vector3.Distance(playerPos.transform.position, transform.position);
             if (toClose <= chase)
             {
-                rB.velocity = new Vector3(moveDir.x, rB.velocity.y, moveDir.y).normalized * hAA.GetEnemySO().Speed();
+                transform.LookAt(playerPos.transform);
+                isChasing = true;
+                Vector3 moveDir = playerPos.transform.position - transform.position;
+                rB.velocity = new Vector3(moveDir.x, rB.velocity.y, moveDir.z).normalized * speed;
+            }
+            else
+            {
+                isChasing = false;
             }
         }
+    }
+    public void Wander()
+    {
+    
     }
 
     void OnDrawGizmosSelected()
