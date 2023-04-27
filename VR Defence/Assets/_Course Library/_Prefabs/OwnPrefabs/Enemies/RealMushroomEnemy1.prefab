@@ -430,7 +430,7 @@ GameObject:
   - component: {fileID: 3168698692946378865}
   m_Layer: 7
   m_Name: RealMushroomEnemy1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -497,7 +497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23de85a2c811df84e9eed923ff6176b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 500
+  speed: 7
   chase: 3
 --- !u!114 &3168698692946378865
 MonoBehaviour:
