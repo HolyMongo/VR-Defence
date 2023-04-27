@@ -17,6 +17,7 @@ public class ElevatorPuzzle : MonoBehaviour
     [SerializeField] private Vector3 startPos;
     [SerializeField] private Vector3 endPos;
     [SerializeField] private Vector3 speed;
+    [SerializeField] private float newSpeed = 0.1f;
 
 
 
@@ -57,7 +58,7 @@ public class ElevatorPuzzle : MonoBehaviour
             }
             if(timer2 >= startDelay)
             {
-                Invoke("MoveUp", 1);
+                MoveUp();
             }
           
           
@@ -132,19 +133,12 @@ public class ElevatorPuzzle : MonoBehaviour
 
     public void MoveUp()
     {
-        if (obj.transform.position.y != endPos.y)
-        {
-            obj.transform.position += speed * Time.deltaTime;
-        }
-        
+        obj.transform.position = Vector3.MoveTowards(obj.transform.position, endPos, newSpeed);
+
     }
     public void MoveDown()
     {
-        if (obj.transform.position.y != startPos.y)
-        {
-            obj.transform.position -= speed * Time.deltaTime;
-        }
-      
+        obj.transform.position = Vector3.MoveTowards(obj.transform.position, startPos, newSpeed);
     }
 
     public void StartDelay()
