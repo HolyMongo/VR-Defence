@@ -21,7 +21,7 @@ public class SpawnHealthAndAttack : MonoBehaviour
         hp = enemy.Hp();
         attack = enemy.Attack();
         speed = enemy.Speed();
-        spawnEntity = GameObject.Find("EnemyBase").GetComponent<SpawnEntity>();
+     //   spawnEntity = GameObject.Find("EnemyBase").GetComponent<SpawnEntity>();
         material = GetComponent<Renderer>();
     }
 
