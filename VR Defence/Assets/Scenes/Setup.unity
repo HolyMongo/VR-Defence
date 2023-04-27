@@ -996,6 +996,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 351006066274383614, guid: b9bd7b6632ee4224e989169e379dfcf1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 42bf5a41bcc981a4fba8de9a4593273f, type: 2}
+    - target: {fileID: 1662789468307206852, guid: b9bd7b6632ee4224e989169e379dfcf1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e867e902a0d811143b7b08bbfb36d48d, type: 2}
+    - target: {fileID: 5989822941766651021, guid: b9bd7b6632ee4224e989169e379dfcf1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 42bf5a41bcc981a4fba8de9a4593273f, type: 2}
+    - target: {fileID: 6170782922942029555, guid: b9bd7b6632ee4224e989169e379dfcf1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 42bf5a41bcc981a4fba8de9a4593273f, type: 2}
     - target: {fileID: 6256716508461280628, guid: b9bd7b6632ee4224e989169e379dfcf1,
         type: 3}
       propertyPath: m_RootOrder
@@ -1051,11 +1071,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6378491990049294186, guid: b9bd7b6632ee4224e989169e379dfcf1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 42bf5a41bcc981a4fba8de9a4593273f, type: 2}
     - target: {fileID: 6746253906434095054, guid: b9bd7b6632ee4224e989169e379dfcf1,
         type: 3}
       propertyPath: m_Name
       value: RealMushroomEnemy1
       objectReference: {fileID: 0}
+    - target: {fileID: 8282733903649881529, guid: b9bd7b6632ee4224e989169e379dfcf1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 42bf5a41bcc981a4fba8de9a4593273f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9bd7b6632ee4224e989169e379dfcf1, type: 3}
 --- !u!1 &1778705939

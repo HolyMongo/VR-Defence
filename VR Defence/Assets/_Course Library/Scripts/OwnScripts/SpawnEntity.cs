@@ -17,6 +17,30 @@ public class SpawnEntity : MonoBehaviour
 
 
     [SerializeField] private float yPosition = 0f;
+
+    private Renderer material;
+    private bool isDissolving = false;
+    private float fade = 1f;
+
+    float hp = 100;
+    private void Start()
+    {
+        material = GetComponent<Renderer>();
+    }
+
+    public void TakeDamage(float _attack)
+    {
+        hp = hp - _attack;
+        Debug.Log(hp);
+        if (hp <= 0)
+        {
+            Die();
+        }
+    }
+    private void Die()
+    {
+        isDissolving = true;      
+    }
     private void Update()
     {
         if (!spawnEnabled)
@@ -30,7 +54,22 @@ public class SpawnEntity : MonoBehaviour
             SpawnEnemy();
             timeSinceLastSpawn = 0f;
         }
+        if (isDissolving)
+        {
+            fade -= Time.deltaTime;
+            if (fade <= 0f)
+            {
+                fade = 0f;
+                isDissolving = false;
+                Destroy(gameObject);
+
+            }
+
+            material.material.SetFloat("_Fade", fade);
+        }
+      
     }
+
 
     private void OnDrawGizmos()
     {
@@ -56,12 +95,12 @@ public class SpawnEntity : MonoBehaviour
     private void SpawnEnemy()
     {
         int type = Random.Range(0, enemyTypes.Count);
-
+      
         Vector3 randomPosition = GetRandomPositionInsideGizmos();
         GameObject spawnedEnemy = Instantiate(enemyPrefab, randomPosition, Quaternion.identity);
         spawnedEnemy.GetComponent<HealthAndAttack>().ChangeEnemySO(enemyTypes[type]);
         currentEnemies.Add(spawnedEnemy.transform);
-
+       
         currentEnemyCount++;
 
         if (currentEnemyCount >= maxEnemies)

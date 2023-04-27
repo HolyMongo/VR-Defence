@@ -12,12 +12,17 @@ public class SpawnHealthAndAttack : MonoBehaviour
     float speed;
 
     PlayerHealth playerHp;
+
+    private Renderer material;
+    private bool isDissolving = false;
+    private float fade = 1f;
     void Start()
     {
         hp = enemy.Hp();
         attack = enemy.Attack();
         speed = enemy.Speed();
         spawnEntity = GameObject.Find("EnemyBase").GetComponent<SpawnEntity>();
+        material = GetComponent<Renderer>();
     }
 
     public EnemySO GetEnemySO()
@@ -40,8 +45,8 @@ public class SpawnHealthAndAttack : MonoBehaviour
     }
     private void Die()
     {
-        Destroy(gameObject);
-        spawnEntity.OnEnemyDeath(transform);
+        isDissolving = true;
+      
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -60,6 +65,21 @@ public class SpawnHealthAndAttack : MonoBehaviour
     }
     void Update()
     {
+        if (isDissolving)
+        {
+            fade -= Time.deltaTime;
+            if (fade <= 0f)
+            {
+                //Fading
+                Debug.Log("Fading");
+                fade = 0f;
+                isDissolving = false;
+                spawnEntity.OnEnemyDeath(transform);
+                Destroy(gameObject);
 
+            }
+
+            material.material.SetFloat("_Fade", fade);
+        }
     }
 }

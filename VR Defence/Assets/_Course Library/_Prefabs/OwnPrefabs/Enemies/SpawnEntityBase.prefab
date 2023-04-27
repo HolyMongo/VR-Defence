@@ -272,7 +272,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -3846018093981099296, guid: ce5ee35ac1f8328459be6c7cb0036dbe, type: 3}
+  - {fileID: 2100000, guid: e867e902a0d811143b7b08bbfb36d48d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -309,13 +309,14 @@ MonoBehaviour:
   enemyPrefab: {fileID: 6746253906434095054, guid: b9bd7b6632ee4224e989169e379dfcf1,
     type: 3}
   gizmosColor: {r: 1, g: 0, b: 0.028542995, a: 1}
-  spawnInterval: 5
+  spawnInterval: 1
   maxEnemies: 10
   spawnEnabled: 1
   enemyTypes:
   - {fileID: 11400000, guid: 986ccf696e219cb4a977d87424c78329, type: 2}
   - {fileID: 11400000, guid: 21c30d321096c5a4180c345be828190c, type: 2}
   currentEnemies: []
+  yPosition: 0
 --- !u!1 &145138158409610059
 GameObject:
   m_ObjectHideFlags: 0
@@ -374,7 +375,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 145138158674563845}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: -1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.040000003, y: 0.008, z: 0.008000002}
   m_ConstrainProportionsScale: 0
@@ -383,7 +384,7 @@ RectTransform:
   - {fileID: 145138158354416570}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 4.84}

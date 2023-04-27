@@ -227,7 +227,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c734d9ed6e9d74249896003a43c43fe5, type: 2}
+  - {fileID: 2100000, guid: e867e902a0d811143b7b08bbfb36d48d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -427,9 +427,7 @@ GameObject:
   - component: {fileID: 8582904246289421219}
   - component: {fileID: 4783047760814978086}
   - component: {fileID: 6114311787286982623}
-  - component: {fileID: 3168698692946378865}
   - component: {fileID: 2948060346758122995}
-  - component: {fileID: 1461464322676669560}
   m_Layer: 7
   m_Name: RealMushroomTWO
   m_TagString: Untagged
@@ -501,19 +499,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   chase: 7
---- !u!114 &3168698692946378865
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6746253906434095054}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3720e6489e95cea43b4a26bfe81be8f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemy: {fileID: 11400000, guid: 986ccf696e219cb4a977d87424c78329, type: 2}
 --- !u!114 &2948060346758122995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -527,20 +512,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 11400000, guid: 986ccf696e219cb4a977d87424c78329, type: 2}
---- !u!114 &1461464322676669560
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6746253906434095054}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d39785d743c3794481892bb9378a11b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  chase: 3
 --- !u!1 &8779836943653606564
 GameObject:
   m_ObjectHideFlags: 0
