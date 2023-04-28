@@ -46,7 +46,7 @@ public class ElevatorPuzzle : MonoBehaviour
         timerText.text = timer.ToString();
         countText.text = countNumber + "/" + maxCount;
     }
-    void Update()
+    void FixedUpdate()
     {
        
         if(count >= maxCount)
