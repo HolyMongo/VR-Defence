@@ -2,45 +2,72 @@ using UnityEngine;
 
 public class MovingPlatform : MonoBehaviour
 {
-    private void OnCollisionEnter(Collision collision)
+    //private void OnCollisionEnter(Collision collision)
+    //{
+    //    if (collision.gameObject.CompareTag("Player"))
+    //    {
+    //       // collision.collider.transform.parent = transform;
+    //       collision.gameObject.transform.SetParent(gameObject.transform, true);
+    //        Debug.Log("Collision");
+    //    }
+    //}
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    if (other.gameObject.CompareTag("Player"))
+    //    {
+    //        other.gameObject.transform.SetParent(gameObject.transform, true);
+    //      // other.transform.parent = transform;
+    //        Debug.Log("trigger");
+    //    }
+    //}
+    private void OnTriggerStay(Collider other)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (other.gameObject.tag == "Player")
         {
-           // collision.collider.transform.parent = transform;
-           // collision.gameObject.transform.SetParent(gameObject.transform, true);
-            Debug.Log("Collision");
-        }
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.CompareTag("Player"))
-        {
-            other.gameObject.transform.SetParent(transform);
-           // other.transform.parent = transform;
+            //transform.parent = other.transform;
+            other.transform.SetParent(transform);
+            // other.transform.parent = transform;
             Debug.Log("trigger");
-        }
-    }
-
-    private void OnCollisionExit(Collision collision)
-    {
-        if (collision.collider.CompareTag("Player"))
-        {
-            collision.collider.transform.parent = null;
         }
     }
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.gameObject.tag == "Player")
         {
-            other.gameObject.transform.parent = null;
+            //transform.parent = other.transform;
+            other.transform.parent = null;
+            // other.transform.parent = transform;
+            Debug.Log("Null");
         }
     }
+    //private void OnCollisionStay(Collision collision)
+    //{
+    //    if (collision.gameObject.tag == "Player")
+    //    {
+    //        //transform.parent = other.transform;
+    //        collision.transform.parent = transform;
+    //        // other.transform.parent = transform;
+    //        Debug.Log("trigger");
+    //    }
+    //}
 
-    private void OnControllerColliderHit(ControllerColliderHit hit)
-    {
-        if(hit.gameObject.CompareTag("Player"))
-        {
-            Debug.Log("Hit");
-        }
-    }
+    //private void OnCollisionExit(Collision collision)
+    //{
+    //    if (collision.gameObject.tag == "Player")
+    //    {
+    //        //transform.parent = other.transform;
+    //        collision.transform.parent = null;
+    //        // other.transform.parent = transform;
+    //        Debug.Log("Null");
+    //    }
+    //}
+    //private void OnTriggerExit(Collider other)
+    //{
+    //    if (other.CompareTag("Player"))
+    //    {
+    //        other.gameObject.transform.parent = null;
+    //    }
+    //}
+
+   
 }
