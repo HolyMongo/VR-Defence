@@ -2,34 +2,22 @@ using UnityEngine;
 
 public class MovingPlatform : MonoBehaviour
 {
-    private CharacterController characterController;
-    private Vector3 platformVelocity;
 
-    private void Start()
+    private void OnCollisionEnter(Collision other)
     {
-        characterController = GetComponent<CharacterController>();
-    }
-
-    private void OnControllerColliderHit(ControllerColliderHit hit)
-    {
-        if (hit.transform.tag == "Platform")
+        if (other.transform.CompareTag("Player"))
         {
-            platformVelocity = hit.transform.GetComponent<Rigidbody>().velocity;
-            characterController.Move(platformVelocity * Time.deltaTime);
-            transform.SetParent(hit.transform);
-        }
-        else
-        {
-            transform.parent = null;
+            other.transform.SetParent(transform);
         }
     }
 
-    private void FixedUpdate()
+    private void OnCollisionExit(Collision other)
     {
-        if (transform.parent != null)
+        if (other.transform.CompareTag("Player"))
         {
-            characterController.Move(platformVelocity * Time.deltaTime);
+            other.transform.SetParent(null);
         }
     }
+
+  
 }
-
