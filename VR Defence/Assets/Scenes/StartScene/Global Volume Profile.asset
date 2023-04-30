@@ -43,10 +43,10 @@ MonoBehaviour:
   active: 1
   shadows:
     m_OverrideState: 1
-    m_Value: {x: 1, y: 1, z: 1, w: -0.3773585}
+    m_Value: {x: 1, y: 1, z: 1, w: -1}
   midtones:
     m_OverrideState: 1
-    m_Value: {x: 1, y: 1, z: 1, w: -0.011742246}
+    m_Value: {x: 1, y: 1, z: 1, w: -0.32286203}
   highlights:
     m_OverrideState: 1
     m_Value: {x: 1, y: 1, z: 1, w: -1}
@@ -283,8 +283,8 @@ MonoBehaviour:
         serializedVersion: 2
         m_Curve:
         - serializedVersion: 3
-          time: 0.36762223
-          value: 0.6818182
+          time: 0.35688186
+          value: 1
           inSlope: 0
           outSlope: 0
           tangentMode: 0
@@ -306,13 +306,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5485954d14dfb9a4c8ead8edb0ded5b1, type: 3}
   m_Name: LiftGammaGain
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   lift:
     m_OverrideState: 1
-    m_Value: {x: 1, y: 1, z: 1, w: -0.025348665}
+    m_Value: {x: 1, y: 1, z: 1, w: -0.061081905}
   gamma:
     m_OverrideState: 1
-    m_Value: {x: 1, y: 1, z: 1, w: -0.38179144}
+    m_Value: {x: 1, y: 1, z: 1, w: 0.09598618}
   gain:
     m_OverrideState: 1
-    m_Value: {x: 1, y: 1, z: 1, w: -0.13950098}
+    m_Value: {x: 1, y: 1, z: 1, w: -0.034904476}
