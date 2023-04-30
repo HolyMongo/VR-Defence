@@ -33,4 +33,13 @@ public class PlayerHealth : MonoBehaviour
     {
         
     }
+
+    private void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        if(hit.collider.CompareTag("Death"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+      
+    }
 }

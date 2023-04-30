@@ -8,6 +8,7 @@ TagManager:
   - Puzzle
   - Enemy
   - Platform
+  - Death
   layers:
   - Default
   - TransparentFX
