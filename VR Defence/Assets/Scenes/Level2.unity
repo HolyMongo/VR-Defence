@@ -2311,7 +2311,7 @@ Transform:
   - {fileID: 453033084}
   - {fileID: 1935521400}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &588140792 stripped
 Transform:
@@ -2820,6 +2820,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 11400000, guid: 35f071b2c44aafa42a6c5726cfb2b1bc, type: 2}
+--- !u!65 &710045915
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710045906}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &735241075
 GameObject:
   m_ObjectHideFlags: 0
@@ -5805,7 +5818,7 @@ Transform:
   - {fileID: 588140792}
   - {fileID: 231294578}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1348473115
 GameObject:
