@@ -9,6 +9,8 @@ TagManager:
   - Enemy
   - Platform
   - Death
+  - LeftHand
+  - RightHand
   layers:
   - Default
   - TransparentFX

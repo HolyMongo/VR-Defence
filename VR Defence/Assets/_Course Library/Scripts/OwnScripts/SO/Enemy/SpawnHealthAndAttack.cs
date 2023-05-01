@@ -74,7 +74,7 @@ public class SpawnHealthAndAttack : MonoBehaviour
                 Debug.Log("Fading");
                 fade = 0f;
                 isDissolving = false;
-                spawnEntity.OnEnemyDeath(transform);
+                spawnEntity.OnEnemyDeath();
                 Destroy(gameObject);
 
             }

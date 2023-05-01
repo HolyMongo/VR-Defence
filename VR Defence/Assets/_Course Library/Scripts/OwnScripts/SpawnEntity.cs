@@ -12,9 +12,9 @@ public class SpawnEntity : MonoBehaviour
     [SerializeField] List<EnemySO> enemyTypes;
 
     private float timeSinceLastSpawn = 0f;
-    [SerializeField] List<Transform> currentEnemies;
+    //[SerializeField] List<Transform> currentEnemies;
     private int currentEnemyCount = 0;
-
+    private int newCurrentEnemies;
 
     [SerializeField] private float yPosition = 0f;
 
@@ -49,7 +49,7 @@ public class SpawnEntity : MonoBehaviour
         }
 
         timeSinceLastSpawn += Time.deltaTime;
-        if (timeSinceLastSpawn >= spawnInterval && currentEnemies.Count < maxEnemies)
+        if (timeSinceLastSpawn >= spawnInterval && currentEnemyCount < maxEnemies)
         {
             SpawnEnemy();
             timeSinceLastSpawn = 0f;
@@ -99,7 +99,7 @@ public class SpawnEntity : MonoBehaviour
         Vector3 randomPosition = GetRandomPositionInsideGizmos();
         GameObject spawnedEnemy = Instantiate(enemyPrefab, randomPosition, Quaternion.identity);
         spawnedEnemy.GetComponent<HealthAndAttack>().ChangeEnemySO(enemyTypes[type]);
-        currentEnemies.Add(spawnedEnemy.transform);
+      
        
         currentEnemyCount++;
 
@@ -108,12 +108,12 @@ public class SpawnEntity : MonoBehaviour
             spawnEnabled = false;
         }
     }
-    public void OnEnemyDeath(Transform enemyTransform)
+    public void OnEnemyDeath()
     {
-        currentEnemies.Remove(enemyTransform);
+       
         currentEnemyCount--;
 
-        if (currentEnemyCount < maxEnemies)
+        if (currentEnemyCount <= maxEnemies)
         {
             spawnEnabled = true;
         }

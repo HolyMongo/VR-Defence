@@ -1,18 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
-public class XRGrabInteractableTwoAttach : MonoBehaviour
+public class XRGrabInteractableTwoAttach : XRGrabInteractable
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Transform leftAttachTransform;
+    public Transform rightAttachTransform;
 
-    // Update is called once per frame
-    void Update()
+
+    protected override void OnSelectEntered(SelectEnterEventArgs args)
     {
-        
+        if(args.interactorObject.transform.CompareTag("LeftHand"))
+        {
+            attachTransform = leftAttachTransform;
+        }
+
+        else if (args.interactorObject.transform.CompareTag("RightHand"))
+        {
+            attachTransform = rightAttachTransform;
+        }
+
+
+        base.OnSelectEntered(args);
     }
 }

@@ -16,6 +16,8 @@ public class HealthAndAttack : MonoBehaviour
     private Renderer material;
     private bool isDissolving = false;
     private float fade = 1f;
+
+    [SerializeField] private SpawnEntity EntityTower;
     void Start()
     {
         hp = enemy.Hp();
@@ -23,7 +25,7 @@ public class HealthAndAttack : MonoBehaviour
         speed = enemy.Speed();
 
         material = GetComponentInChildren<Renderer>();
-       
+        EntityTower = GameObject.Find("SpawnPositions").GetComponent<SpawnEntity>();
         //  spawnEntity = GameObject.Find("EnemyBase").GetComponent<SpawnEntity>();
     }
 
@@ -77,7 +79,11 @@ public class HealthAndAttack : MonoBehaviour
                 fade = 0f;
                 isDissolving = false;        
                 Destroy(gameObject);
-
+                if(EntityTower != null)
+                {
+                    EntityTower.OnEnemyDeath();
+                }
+              
             }
 
             material.material.SetFloat("_Fade", fade);
