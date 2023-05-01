@@ -17,7 +17,7 @@ public class HealthAndAttack : MonoBehaviour
     private bool isDissolving = false;
     private float fade = 1f;
 
-    [SerializeField] private SpawnEntity EntityTower;
+    private SpawnEntity EntityTower;
     void Start()
     {
         hp = enemy.Hp();

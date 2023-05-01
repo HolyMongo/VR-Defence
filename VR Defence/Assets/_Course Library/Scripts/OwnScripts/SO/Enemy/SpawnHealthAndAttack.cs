@@ -5,7 +5,7 @@ using UnityEngine;
 public class SpawnHealthAndAttack : MonoBehaviour
 {
     [SerializeField] EnemySO enemy;
-    SpawnEntity spawnEntity;
+    //  SpawnEntity spawnEntity;
 
     float hp;
     float attack;
@@ -16,13 +16,17 @@ public class SpawnHealthAndAttack : MonoBehaviour
     private Renderer material;
     private bool isDissolving = false;
     private float fade = 1f;
+
+    private SpawnEntity EntityTower;
     void Start()
     {
         hp = enemy.Hp();
         attack = enemy.Attack();
         speed = enemy.Speed();
-     //   spawnEntity = GameObject.Find("EnemyBase").GetComponent<SpawnEntity>();
-        material = GetComponent<Renderer>();
+
+        material = GetComponentInChildren<Renderer>();
+        EntityTower = GameObject.Find("SpawnPositions").GetComponent<SpawnEntity>();
+        //  spawnEntity = GameObject.Find("EnemyBase").GetComponent<SpawnEntity>();
     }
 
     public EnemySO GetEnemySO()
@@ -46,7 +50,7 @@ public class SpawnHealthAndAttack : MonoBehaviour
     private void Die()
     {
         isDissolving = true;
-      
+        //   spawnEntity.OnEnemyDeath(transform);
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -74,8 +78,11 @@ public class SpawnHealthAndAttack : MonoBehaviour
                 Debug.Log("Fading");
                 fade = 0f;
                 isDissolving = false;
-                spawnEntity.OnEnemyDeath();
                 Destroy(gameObject);
+                if (EntityTower != null)
+                {
+                    EntityTower.OnEnemyDeath();
+                }
 
             }
 
