@@ -6,14 +6,26 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class ShootGun : MonoBehaviour
 {
 
+    // So Reference
+    [Header("SO Reference")]
     [SerializeField] weaponsSO weapon;
     float damage;
+    // Just Things
+    [Header("Things")]
+    [SerializeField] private float speed = 40f;
+    [SerializeField] private GameObject bullet;
+    [SerializeField] Transform Barrel;
 
-    [SerializeField] Transform bulletExitAndDirection;
-    float rayDistance = 10f;
+    // Layer
+    [Header("Layer")]
     [SerializeField] LayerMask targetLayer;
 
-    [SerializeField] private GameObject raycastLine;
+    // Audio
+    [Header("Audio")]
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip audioClip;
+
+
     void Start()
     {
         damage = weapon.Attack();
@@ -22,22 +34,14 @@ public class ShootGun : MonoBehaviour
     
     void Update()
     {       
-        
+       
     }
 
     public void HitObject()
     {
-        RaycastHit hit;
-     
-        if (Physics.Raycast(bulletExitAndDirection.position, bulletExitAndDirection.forward, out hit, rayDistance))
-        {
-            GameObject enemy = hit.transform.gameObject;
-            HealthAndAttack enemyHealth = enemy.GetComponent<HealthAndAttack>();
-            enemyHealth.TakeDamage(damage);
-            Debug.Log("hit an object");
-
-
-        }
-    }
-    
+        GameObject spawnedBullet = Instantiate(bullet, Barrel.position, Quaternion.identity);
+        spawnedBullet.GetComponent<Rigidbody>().velocity = speed * Barrel.forward;
+        audioSource.PlayOneShot(audioClip);
+        Destroy(spawnedBullet, 10);
+    }  
 }

@@ -1134,7 +1134,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh162712
+  m_Name: pb_Mesh30720
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2448,7 +2448,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh162380
+  m_Name: pb_Mesh30406
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3836,7 +3836,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh162442
+  m_Name: pb_Mesh30462
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -21199,6 +21199,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4462686800586995542, guid: a317e489e8a2a2a459d1a7275b9019e6,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4516674431855461043, guid: a317e489e8a2a2a459d1a7275b9019e6,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5940444683859193784, guid: a317e489e8a2a2a459d1a7275b9019e6,
         type: 3}
       propertyPath: m_RootOrder
@@ -34744,7 +34754,7 @@ PrefabInstance:
     - target: {fileID: 5831469219076811952, guid: ca91eb333f1bb914ca12716c24ba31b8,
         type: 3}
       propertyPath: action.m_SingletonActionBindings.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5831469219076811952, guid: ca91eb333f1bb914ca12716c24ba31b8,
         type: 3}
@@ -34758,6 +34768,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5831469219076811952, guid: ca91eb333f1bb914ca12716c24ba31b8,
         type: 3}
+      propertyPath: action.m_SingletonActionBindings.Array.data[2].m_Id
+      value: 54269ef3-d4b9-4552-abd5-afa38749f0c3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5831469219076811952, guid: ca91eb333f1bb914ca12716c24ba31b8,
+        type: 3}
       propertyPath: action.m_SingletonActionBindings.Array.data[0].m_Path
       value: <XRController>{LeftHand}/thumbstickTouched
       objectReference: {fileID: 0}
@@ -34765,6 +34780,11 @@ PrefabInstance:
         type: 3}
       propertyPath: action.m_SingletonActionBindings.Array.data[1].m_Path
       value: <Keyboard>/p
+      objectReference: {fileID: 0}
+    - target: {fileID: 5831469219076811952, guid: ca91eb333f1bb914ca12716c24ba31b8,
+        type: 3}
+      propertyPath: action.m_SingletonActionBindings.Array.data[2].m_Path
+      value: <XRSimulatedController>{LeftHand}/primaryButton
       objectReference: {fileID: 0}
     - target: {fileID: 5831469219076811952, guid: ca91eb333f1bb914ca12716c24ba31b8,
         type: 3}
@@ -34789,7 +34809,7 @@ PrefabInstance:
     - target: {fileID: 5831469219076811952, guid: ca91eb333f1bb914ca12716c24ba31b8,
         type: 3}
       propertyPath: OnRelease.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ActivateRay
+      value: DeactivateRay
       objectReference: {fileID: 0}
     - target: {fileID: 5831469219076811952, guid: ca91eb333f1bb914ca12716c24ba31b8,
         type: 3}
@@ -35372,6 +35392,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1143813955}
     m_Modifications:
+    - target: {fileID: 4399985873052491163, guid: 84afb99caa1714e4f8efa9e3ba93ccc9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.004
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399985873052491163, guid: 84afb99caa1714e4f8efa9e3ba93ccc9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.093
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399985873052491163, guid: 84afb99caa1714e4f8efa9e3ba93ccc9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.111
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399985873052491163, guid: 84afb99caa1714e4f8efa9e3ba93ccc9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9944303
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399985873052491163, guid: 84afb99caa1714e4f8efa9e3ba93ccc9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.10539634
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399985873052491163, guid: 84afb99caa1714e4f8efa9e3ba93ccc9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 12.1
+      objectReference: {fileID: 0}
     - target: {fileID: 6106115967216189698, guid: 84afb99caa1714e4f8efa9e3ba93ccc9,
         type: 3}
       propertyPath: m_AttachTransform
@@ -35400,37 +35450,37 @@ PrefabInstance:
     - target: {fileID: 7155068949155444113, guid: 84afb99caa1714e4f8efa9e3ba93ccc9,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7073824
+      value: 0.992631
       objectReference: {fileID: 0}
     - target: {fileID: 7155068949155444113, guid: 84afb99caa1714e4f8efa9e3ba93ccc9,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.06419524
+      value: 0.000026022308
       objectReference: {fileID: 0}
     - target: {fileID: 7155068949155444113, guid: 84afb99caa1714e4f8efa9e3ba93ccc9,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.06475119
+      value: -0.121176384
       objectReference: {fileID: 0}
     - target: {fileID: 7155068949155444113, guid: 84afb99caa1714e4f8efa9e3ba93ccc9,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.7009255
+      value: 0.0000031766983
       objectReference: {fileID: 0}
     - target: {fileID: 7155068949155444113, guid: 84afb99caa1714e4f8efa9e3ba93ccc9,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: 0.003
       objectReference: {fileID: 0}
     - target: {fileID: 7155068949155444113, guid: 84afb99caa1714e4f8efa9e3ba93ccc9,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -13.92
       objectReference: {fileID: 0}
     - target: {fileID: 7155068949155444113, guid: 84afb99caa1714e4f8efa9e3ba93ccc9,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -39.413
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7494053415444950827, guid: 84afb99caa1714e4f8efa9e3ba93ccc9,
         type: 3}

@@ -11,7 +11,7 @@ public class DealDamageOnHit : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.CompareTag("Entity"))
+        if (collision.collider.CompareTag("Enemy"))
         {
             GameObject enemy = collision.collider.gameObject;
             enemy.GetComponent<HealthAndAttack>().TakeDamage(weapon.Attack());
