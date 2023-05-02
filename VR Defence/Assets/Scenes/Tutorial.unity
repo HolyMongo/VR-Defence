@@ -35332,6 +35332,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cricket_Bat_Blue
       objectReference: {fileID: 0}
+    - target: {fileID: 2976126622959253399, guid: 37297f046437eed4ebab5d878dc3a685,
+        type: 3}
+      propertyPath: m_MovementType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2976126622959253399, guid: 37297f046437eed4ebab5d878dc3a685,
+        type: 3}
+      propertyPath: m_SmoothPosition
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2976126622959253399, guid: 37297f046437eed4ebab5d878dc3a685,
+        type: 3}
+      propertyPath: m_SmoothRotation
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37297f046437eed4ebab5d878dc3a685, type: 3}
 --- !u!1001 &3146358661594338691
@@ -35812,17 +35827,17 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 0}
   m_AttachEaseInTime: 0.15
-  m_MovementType: 1
+  m_MovementType: 2
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
   m_AngularVelocityScale: 1
   m_TrackPosition: 1
-  m_SmoothPosition: 1
+  m_SmoothPosition: 0
   m_SmoothPositionAmount: 5
   m_TightenPosition: 0.5
   m_TrackRotation: 1
-  m_SmoothRotation: 1
+  m_SmoothRotation: 0
   m_SmoothRotationAmount: 5
   m_TightenRotation: 0.5
   m_ThrowOnDetach: 1
@@ -36579,6 +36594,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1143813955}
     m_Modifications:
+    - target: {fileID: 527599960729703662, guid: 03d70c18c56f65441a939db7559a672f,
+        type: 3}
+      propertyPath: m_MovementType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 527599960729703662, guid: 03d70c18c56f65441a939db7559a672f,
+        type: 3}
+      propertyPath: m_SmoothPosition
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 527599960729703662, guid: 03d70c18c56f65441a939db7559a672f,
+        type: 3}
+      propertyPath: m_SmoothRotation
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1664437965676490630, guid: 03d70c18c56f65441a939db7559a672f,
         type: 3}
       propertyPath: m_RootOrder

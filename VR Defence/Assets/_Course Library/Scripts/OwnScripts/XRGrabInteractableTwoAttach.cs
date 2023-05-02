@@ -8,7 +8,7 @@ public class XRGrabInteractableTwoAttach : XRGrabInteractable
     public Transform leftAttachTransform;
     public Transform rightAttachTransform;
 
-    public Transform defaultAttachTransform;
+ 
 
 
     protected override void OnSelectEntered(SelectEnterEventArgs args)
