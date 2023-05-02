@@ -53,7 +53,7 @@ Material:
     - _UpAndDownOffset: 100
     m_Colors:
     - _DeepColor: {r: 0.10828277, g: 0.37804118, b: 0.6886792, a: 1}
-    - _ShallowWaterColor: {r: 0.26421005, g: 0.6464627, b: 0.6886792, a: 1}
+    - _ShallowWaterColor: {r: 0.26421, g: 0.6464627, b: 0.6886792, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &2839876403253336701
 MonoBehaviour:
