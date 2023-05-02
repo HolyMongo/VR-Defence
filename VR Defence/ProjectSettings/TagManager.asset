@@ -11,6 +11,7 @@ TagManager:
   - Death
   - LeftHand
   - RightHand
+  - Ground
   layers:
   - Default
   - TransparentFX

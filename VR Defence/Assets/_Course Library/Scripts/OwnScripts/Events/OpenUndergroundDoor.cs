@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class OpenUndergroundDoor : MonoBehaviour
 {
-    private int enemiesLeft;
+    [SerializeField] private int enemiesLeft;
     [SerializeField] private GameObject door;
-    bool enemiesHasSpawned = false;
+    [SerializeField] bool enemiesHasSpawned = false;
 
     private void Update()
     {

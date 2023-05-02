@@ -5,9 +5,10 @@ using UnityEngine;
 public class DealDamageOnHit : MonoBehaviour
 {
     [SerializeField] weaponsSO weapon;
+    [SerializeField] float lifeTimer;
     private void Start()
     {
-        
+        StartCoroutine("LifeTime");
     }
     private void OnCollisionEnter(Collision collision)
     {
@@ -16,5 +17,15 @@ public class DealDamageOnHit : MonoBehaviour
             GameObject enemy = collision.collider.gameObject;
             enemy.GetComponent<HealthAndAttack>().TakeDamage(weapon.Attack());
         }
+        else if (collision.collider.CompareTag("Ground"))
+        {
+            Destroy(transform.gameObject);
+        }
+    }
+
+    IEnumerable LifeTime()
+    {
+        yield return new WaitForSeconds(lifeTimer);
+        Destroy(transform.gameObject);
     }
 }
