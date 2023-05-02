@@ -8,20 +8,36 @@ public class XRGrabInteractableTwoAttach : XRGrabInteractable
     public Transform leftAttachTransform;
     public Transform rightAttachTransform;
 
+    public Transform defaultAttachTransform;
+
 
     protected override void OnSelectEntered(SelectEnterEventArgs args)
     {
-        if(args.interactorObject.transform.CompareTag("LeftHand"))
-        {
-            attachTransform = leftAttachTransform;
-        }
+       
+            if (args.interactorObject.transform.CompareTag("LeftHand"))
+            {
+                attachTransform = leftAttachTransform;
+            }
 
-        else if (args.interactorObject.transform.CompareTag("RightHand"))
-        {
-            attachTransform = rightAttachTransform;
-        }
+            else if (args.interactorObject.transform.CompareTag("RightHand"))
+            {
+                attachTransform = rightAttachTransform;
+            }
+        
+      
 
 
         base.OnSelectEntered(args);
     }
+    //protected override void OnSelectExited(SelectExitEventArgs args)
+    //{
+    //    if (args.interactableObject.transform.CompareTag("Socket"))
+    //    {
+    //        attachTransform = defaultAttachTransform;
+    //    }
+       
+
+    //    base.OnSelectExited(args);
+    //}
+   
 }
