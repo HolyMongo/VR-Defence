@@ -12,6 +12,7 @@ TagManager:
   - LeftHand
   - RightHand
   - Ground
+  - Socket
   layers:
   - Default
   - TransparentFX
@@ -21,8 +22,8 @@ TagManager:
   - UI
   - Ground
   - Enemy
-  - 
-  - 
+  - Interactable
+  - NonInteractable
   - 
   - 
   - 
