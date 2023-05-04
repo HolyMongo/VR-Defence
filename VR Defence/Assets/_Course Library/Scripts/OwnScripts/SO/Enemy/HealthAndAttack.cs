@@ -25,7 +25,11 @@ public class HealthAndAttack : MonoBehaviour
         speed = enemy.Speed();
 
         material = GetComponentInChildren<Renderer>();
-        EntityTower = GameObject.Find("SpawnPositions").GetComponent<SpawnEntity>();
+        if(EntityTower != null)
+        {
+            EntityTower = GameObject.Find("SpawnPositions").GetComponent<SpawnEntity>();
+        }
+    
         //  spawnEntity = GameObject.Find("EnemyBase").GetComponent<SpawnEntity>();
     }
 
