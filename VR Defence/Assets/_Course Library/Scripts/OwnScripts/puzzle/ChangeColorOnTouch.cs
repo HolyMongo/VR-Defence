@@ -7,6 +7,7 @@ public class ChangeColorOnTouch : MonoBehaviour
     [SerializeField] private List<Material> materials;
     [SerializeField] private MeshRenderer mesh;
     [SerializeField] private int currentIndex;
+    [SerializeField] private string tagName;
 
 
     float testTimer = 1;
@@ -29,7 +30,7 @@ public class ChangeColorOnTouch : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         Debug.Log("Test!!");
-        if (collision.collider.CompareTag("Hand"))
+        if (collision.collider.CompareTag(tagName))
         {
             currentIndex++;
             if (currentIndex > materials.Count - 1)
@@ -44,7 +45,7 @@ public class ChangeColorOnTouch : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("Test!! trigger");
-        if (other.CompareTag("Hand"))
+        if (other.gameObject.CompareTag(tagName))
         {
             currentIndex++;
             if (currentIndex > materials.Count - 1)
@@ -58,19 +59,19 @@ public class ChangeColorOnTouch : MonoBehaviour
 
     private void Update()
     {
-        testTimer -= Time.deltaTime;
+        //testTimer -= Time.deltaTime;
 
-        if (testTimer < 0)
-        {
-            testTimer = 3;
-            currentIndex++;
-            if (currentIndex > materials.Count - 1)
-            {
-                currentIndex = 0;
-            }
-            Debug.Log("updated material");
-            mesh.material = materials[currentIndex];
-        }
+        //if (testTimer < 0)
+        //{
+        //    testTimer = 3;
+        //    currentIndex++;
+        //    if (currentIndex > materials.Count - 1)
+        //    {
+        //        currentIndex = 0;
+        //    }
+        //    Debug.Log("updated material");
+        //    mesh.material = materials[currentIndex];
+        //}
     }
 
 }
