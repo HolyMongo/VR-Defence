@@ -15,6 +15,7 @@ TagManager:
   - Socket
   - Hand
   - Cube
+  - Trail
   layers:
   - Default
   - TransparentFX
@@ -47,7 +48,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - Teleport
   m_SortingLayers:
   - name: Default
     uniqueID: 0
