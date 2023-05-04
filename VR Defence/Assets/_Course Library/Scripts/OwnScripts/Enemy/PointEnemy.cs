@@ -15,6 +15,9 @@ public class PointEnemy : MonoBehaviour
     private bool isChasing = false;
     public float distance = 1;
 
+   // [SerializeField] private Animator playAnim;
+    private Animator Anim;
+
     void Start()
     {
         playerPos = GameObject.Find("XR Rig");
@@ -36,6 +39,7 @@ public class PointEnemy : MonoBehaviour
             currentPointIndex = 0;
             currentPoint = gizmoPoints[currentPointIndex].position;
         }
+        Anim = GetComponent<Animator>();
     }
 
 
@@ -62,13 +66,16 @@ public class PointEnemy : MonoBehaviour
             if (toClose <= chase)
             {
                 transform.LookAt(playerPos.transform);
+                Anim.Play("SpearMushroomAttack");
                 isChasing = true;
                 Vector3 moveDir = playerPos.transform.position - transform.position;
                 rB.velocity = new Vector3(moveDir.x, rB.velocity.y, moveDir.z).normalized * speed;
+              
             }
             else
             {
                 isChasing = false;
+              
             }
         }
     }
@@ -91,6 +98,12 @@ public class PointEnemy : MonoBehaviour
             Vector3 moveDir = currentPoint - transform.position;
             rB.velocity = new Vector3(moveDir.x, rB.velocity.y, moveDir.z).normalized * speed;
         }
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, chase);
     }
 }
 
