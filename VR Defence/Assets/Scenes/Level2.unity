@@ -761,7 +761,6 @@ GameObject:
   - component: {fileID: 81988891}
   - component: {fileID: 81988890}
   - component: {fileID: 81988889}
-  - component: {fileID: 81988888}
   - component: {fileID: 81988893}
   - component: {fileID: 81988894}
   m_Layer: 0
@@ -771,26 +770,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &81988888
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 81988887}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a0b74171c795144ab011108284e5e52, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  materials:
-  - {fileID: 2100000, guid: 44b2a3a1458da6a4a94c228d967474ad, type: 2}
-  - {fileID: 2100000, guid: 2bbb6dc6dadb3284e8ee14abb21af440, type: 2}
-  - {fileID: 2100000, guid: 8313b7f851584554aa895abc637c721f, type: 2}
-  - {fileID: 2100000, guid: 8ff8167b568e29645a09f5afb9eadfaa, type: 2}
-  mesh: {fileID: 0}
-  currentIndex: 0
-  tagName: 
 --- !u!65 &81988889
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -919,7 +898,7 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 81988888}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ChangeColorOnTouch, Assembly-CSharp
         m_MethodName: UpdateColor
         m_Mode: 1
@@ -1939,6 +1918,41 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2130331530761912218, guid: d661f645c81f29b4aa596207971ae441,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2130331530761912218, guid: d661f645c81f29b4aa596207971ae441,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2130331530761912218, guid: d661f645c81f29b4aa596207971ae441,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1319053540}
+    - target: {fileID: 2130331530761912218, guid: d661f645c81f29b4aa596207971ae441,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2130331530761912218, guid: d661f645c81f29b4aa596207971ae441,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpdateColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2130331530761912218, guid: d661f645c81f29b4aa596207971ae441,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ChangeColorOnTouch, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2130331530761912218, guid: d661f645c81f29b4aa596207971ae441,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2130331530761912220, guid: d661f645c81f29b4aa596207971ae441,
         type: 3}
       propertyPath: m_RootOrder
@@ -1962,7 +1976,7 @@ PrefabInstance:
     - target: {fileID: 2130331530761912220, guid: d661f645c81f29b4aa596207971ae441,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -100.759995
+      value: -85.124
       objectReference: {fileID: 0}
     - target: {fileID: 2130331530761912220, guid: d661f645c81f29b4aa596207971ae441,
         type: 3}
@@ -1972,7 +1986,7 @@ PrefabInstance:
     - target: {fileID: 2130331530761912220, guid: d661f645c81f29b4aa596207971ae441,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 113.50001
+      value: 89.200005
       objectReference: {fileID: 0}
     - target: {fileID: 2130331530761912220, guid: d661f645c81f29b4aa596207971ae441,
         type: 3}
@@ -3192,7 +3206,7 @@ PrefabInstance:
     - target: {fileID: 4616165200164398447, guid: 76f3439a0ae796e4b81bee3f91f888ee,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -100.7
+      value: -85.064
       objectReference: {fileID: 0}
     - target: {fileID: 4616165200164398447, guid: 76f3439a0ae796e4b81bee3f91f888ee,
         type: 3}
@@ -3202,7 +3216,7 @@ PrefabInstance:
     - target: {fileID: 4616165200164398447, guid: 76f3439a0ae796e4b81bee3f91f888ee,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 113.9
+      value: 89.6
       objectReference: {fileID: 0}
     - target: {fileID: 4616165200164398447, guid: 76f3439a0ae796e4b81bee3f91f888ee,
         type: 3}
@@ -6636,6 +6650,32 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1317497705}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1319053535 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2130331530761912223, guid: d661f645c81f29b4aa596207971ae441,
+    type: 3}
+  m_PrefabInstance: {fileID: 384261472}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1319053540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1319053535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a0b74171c795144ab011108284e5e52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materials:
+  - {fileID: 2100000, guid: 5db4acbcb4c979e4f8b0d32158997708, type: 2}
+  - {fileID: 2100000, guid: 515e2913da403db4e847ee8dcd96de40, type: 2}
+  - {fileID: 2100000, guid: 8313b7f851584554aa895abc637c721f, type: 2}
+  - {fileID: 2100000, guid: 8ff8167b568e29645a09f5afb9eadfaa, type: 2}
+  mesh: {fileID: 0}
+  currentIndex: 0
+  cubeToChange: {fileID: 81988887}
 --- !u!1 &1337014189
 GameObject:
   m_ObjectHideFlags: 0
@@ -14158,7 +14198,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: dc7e1aa7dc2056c4aa2ce9e80f697ec8, type: 2}
   mesh: {fileID: 0}
   currentIndex: 0
-  tagName: Cube
+  cubeToChange: {fileID: 0}
 --- !u!1 &1720408266
 GameObject:
   m_ObjectHideFlags: 0
@@ -14895,7 +14935,7 @@ PrefabInstance:
     - target: {fileID: 4616165200164398447, guid: 76f3439a0ae796e4b81bee3f91f888ee,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -100.67262
+      value: -85.03663
       objectReference: {fileID: 0}
     - target: {fileID: 4616165200164398447, guid: 76f3439a0ae796e4b81bee3f91f888ee,
         type: 3}
@@ -14905,7 +14945,7 @@ PrefabInstance:
     - target: {fileID: 4616165200164398447, guid: 76f3439a0ae796e4b81bee3f91f888ee,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 114.29543
+      value: 89.99543
       objectReference: {fileID: 0}
     - target: {fileID: 4616165200164398447, guid: 76f3439a0ae796e4b81bee3f91f888ee,
         type: 3}
@@ -16854,7 +16894,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: dc7e1aa7dc2056c4aa2ce9e80f697ec8, type: 2}
   mesh: {fileID: 0}
   currentIndex: 0
-  tagName: Cube
+  cubeToChange: {fileID: 0}
 --- !u!1 &2030626921
 GameObject:
   m_ObjectHideFlags: 0
