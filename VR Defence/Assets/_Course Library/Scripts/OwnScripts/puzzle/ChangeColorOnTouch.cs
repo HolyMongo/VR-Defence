@@ -8,11 +8,13 @@ public class ChangeColorOnTouch : MonoBehaviour
     [SerializeField] private MeshRenderer mesh;
     [SerializeField] private int currentIndex;
     [SerializeField] private GameObject cubeToChange;
+    [SerializeField] private CheckCorrectColors checkColors;
 
 
     void Start()
     {
         mesh = cubeToChange.GetComponent<MeshRenderer>();
+        currentIndex = 0;
     }
 
     public void UpdateColor()
@@ -24,5 +26,6 @@ public class ChangeColorOnTouch : MonoBehaviour
         }
         Debug.Log("Test!!");
         mesh.material = materials[currentIndex];
+        checkColors.CheckIfColorsAreCorect();
     }
 }
