@@ -30171,7 +30171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObject1: {fileID: 3640125181952568679}
-  gameObject2: {fileID: 3640125181952568679}
+  gameObject2: {fileID: 4505002237491985335}
   isActive: 0
 --- !u!850595691 &2042323899
 LightingSettings:
