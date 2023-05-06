@@ -245,6 +245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 11400000, guid: 986ccf696e219cb4a977d87424c78329, type: 2}
+  shouldUseSpawner: 1
 --- !u!1 &2914156417259240945
 GameObject:
   m_ObjectHideFlags: 0

@@ -102,7 +102,7 @@ public class SpawnEntity : MonoBehaviour
       
        
         currentEnemyCount++;
-
+        Debug.Log(currentEnemyCount);
         if (currentEnemyCount >= maxEnemies)
         {
             spawnEnabled = false;

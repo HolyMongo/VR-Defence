@@ -20,6 +20,7 @@ public class Portal : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             SceneManager.LoadScene(teleport);
+
         }
        
     }
