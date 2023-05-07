@@ -30,14 +30,17 @@ public class ElevatorPuzzle : MonoBehaviour
     [SerializeField] private TMP_Text countText;
     private float countNumber = 0;
 
+    private List<Vector3> ballsTransform = new List<Vector3>();
+
     private void Awake()
     {
         timer = startDelay;
         foreach (var child in transform)
         {
-            maxCount++;     
+            maxCount++;
+            ballsTransform.Add(((Transform)child).localPosition);
         }
-      
+       
     }
     private void Start()
     {
@@ -68,14 +71,8 @@ public class ElevatorPuzzle : MonoBehaviour
           if(obj.transform.position.y >= endPos.y)
             {                        
                 obj.transform.position = endPos;
-                foreach (Transform child in transform)
-                {
-                    //GameObject.Destroy(child.gameObject);
-                   
-                    child.transform.localPosition = new Vector3(0, 2, 2);
+                BallsStartPoint();
 
-                }
-             
             }
           
         }
@@ -153,4 +150,12 @@ public class ElevatorPuzzle : MonoBehaviour
         }
     }
 
+   public void BallsStartPoint()
+    {
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            Transform child = transform.GetChild(i);
+            child.localPosition = ballsTransform[i];
+        }
+    }
 }
