@@ -7,7 +7,13 @@ public class CheckCorrectColors : MonoBehaviour
     [SerializeField] private List<GameObject> cubes;
     [SerializeField] private List<GameObject> backgrounds;
     private bool isCorrectCombination;
+    [SerializeField] private GameObject door;
+    private Vector3 startPos;
 
+    private void Start()
+    {
+        startPos = door.transform.position;
+    }
     public void CheckIfColorsAreCorect()
     {
         isCorrectCombination = true;
@@ -28,7 +34,18 @@ public class CheckCorrectColors : MonoBehaviour
 
         if (isCorrectCombination)
         {
-            Debug.Log("Correct Combo!");
+            InvokeRepeating("OpenDoor", 0, 0.1f);
         }
     }
+
+    public void OpenDoor()
+    {
+        Debug.Log("Test to move door");
+        if (door.transform.rotation.x >= -0.9)
+        {
+            door.transform.Rotate(door.transform.rotation.x - 0.5f, 0, 0);
+        }
+    }
+
+    
 }

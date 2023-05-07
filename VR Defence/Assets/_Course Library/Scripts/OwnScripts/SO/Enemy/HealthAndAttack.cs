@@ -12,6 +12,7 @@ public class HealthAndAttack : MonoBehaviour
     float speed;
 
     PlayerHealth playerHp;
+    [SerializeField] private HealthBar hpBar;
 
     private Renderer material;
     private bool isDissolving = false;
@@ -51,6 +52,7 @@ public class HealthAndAttack : MonoBehaviour
     public void TakeDamage(float _attack)
     {
         hp = hp - _attack;
+        hpBar.TakeDamage(_attack);
         Debug.Log(hp);
         if (hp <= 0)
         {

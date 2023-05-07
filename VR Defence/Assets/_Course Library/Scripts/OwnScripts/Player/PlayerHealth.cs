@@ -7,6 +7,7 @@ public class PlayerHealth : MonoBehaviour
 {
 
     [SerializeField] private PlayerSO playerSo;
+    [SerializeField] HealthBar hpBar;
     private float hp;
 
     void Start()
@@ -18,6 +19,7 @@ public class PlayerHealth : MonoBehaviour
     public void TakeDamage(float _attack)
     {
         hp -= _attack;
+        hpBar.TakeDamage(_attack);
         if (hp <= 0)
         {
             Death();
@@ -29,17 +31,4 @@ public class PlayerHealth : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     
-    void Update()
-    {
-        
-    }
-
-    private void OnControllerColliderHit(ControllerColliderHit hit)
-    {
-        if(hit.collider.CompareTag("Death"))
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        }
-      
-    }
 }
