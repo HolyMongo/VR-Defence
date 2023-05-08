@@ -52,7 +52,10 @@ public class HealthAndAttack : MonoBehaviour
     public void TakeDamage(float _attack)
     {
         hp = hp - _attack;
-        hpBar.TakeDamage(_attack);
+        if (hpBar != null)
+        {
+            hpBar.TakeDamage(_attack);
+        }
         Debug.Log(hp);
         if (hp <= 0)
         {

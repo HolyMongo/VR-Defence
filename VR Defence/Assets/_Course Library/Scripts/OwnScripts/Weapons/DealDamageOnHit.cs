@@ -8,6 +8,10 @@ public class DealDamageOnHit : MonoBehaviour
     [SerializeField] float lifeTimer;
     private void Start()
     {
+        if (lifeTimer == 0)
+        {
+            lifeTimer = 2;
+        }
         StartCoroutine("LifeTime");
     }
     private void OnCollisionEnter(Collision collision)

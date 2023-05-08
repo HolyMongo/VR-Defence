@@ -402,6 +402,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6038673646720299723, guid: 1cf2874af159f9842823601ef6469bfc,
         type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 6038673646720299723, guid: 1cf2874af159f9842823601ef6469bfc,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -832,6 +837,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6038673646720299723, guid: 1cf2874af159f9842823601ef6469bfc,
         type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 6038673646720299723, guid: 1cf2874af159f9842823601ef6469bfc,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -1101,6 +1111,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wall (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6038673646720299723, guid: 1cf2874af159f9842823601ef6469bfc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6038673646720299723, guid: 1cf2874af159f9842823601ef6469bfc,
         type: 3}
@@ -1547,7 +1562,7 @@ GameObject:
   - component: {fileID: 204348558}
   m_Layer: 0
   m_Name: Cube (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2335,6 +2350,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wall (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6038673646720299723, guid: 1cf2874af159f9842823601ef6469bfc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6038673646720299723, guid: 1cf2874af159f9842823601ef6469bfc,
         type: 3}
@@ -4017,6 +4037,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6038673646720299723, guid: 1cf2874af159f9842823601ef6469bfc,
         type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 6038673646720299723, guid: 1cf2874af159f9842823601ef6469bfc,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -4833,6 +4858,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6038673646720299723, guid: 1cf2874af159f9842823601ef6469bfc,
         type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 6038673646720299723, guid: 1cf2874af159f9842823601ef6469bfc,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -4930,6 +4960,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wall (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6038673646720299723, guid: 1cf2874af159f9842823601ef6469bfc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6038673646720299723, guid: 1cf2874af159f9842823601ef6469bfc,
         type: 3}
@@ -5083,6 +5118,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wall (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6038673646720299723, guid: 1cf2874af159f9842823601ef6469bfc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6038673646720299723, guid: 1cf2874af159f9842823601ef6469bfc,
         type: 3}
@@ -10575,6 +10615,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6038673646720299723, guid: 1cf2874af159f9842823601ef6469bfc,
         type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 6038673646720299723, guid: 1cf2874af159f9842823601ef6469bfc,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -10861,6 +10906,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wall (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6038673646720299723, guid: 1cf2874af159f9842823601ef6469bfc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6038673646720299723, guid: 1cf2874af159f9842823601ef6469bfc,
         type: 3}
@@ -11426,7 +11476,7 @@ GameObject:
   - component: {fileID: 881347736}
   m_Layer: 0
   m_Name: Cube (4)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14295,6 +14345,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6038673646720299723, guid: 1cf2874af159f9842823601ef6469bfc,
         type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 6038673646720299723, guid: 1cf2874af159f9842823601ef6469bfc,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -14392,6 +14447,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wall (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6038673646720299723, guid: 1cf2874af159f9842823601ef6469bfc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6038673646720299723, guid: 1cf2874af159f9842823601ef6469bfc,
         type: 3}
@@ -19511,7 +19571,7 @@ GameObject:
   - component: {fileID: 1053961263}
   m_Layer: 0
   m_Name: -- Static --
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20322,7 +20382,7 @@ GameObject:
   - component: {fileID: 1111536178}
   m_Layer: 0
   m_Name: Cube (5)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20566,6 +20626,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6038673646720299723, guid: 1cf2874af159f9842823601ef6469bfc,
         type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 6038673646720299723, guid: 1cf2874af159f9842823601ef6469bfc,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -20694,6 +20759,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wall (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6038673646720299723, guid: 1cf2874af159f9842823601ef6469bfc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6038673646720299723, guid: 1cf2874af159f9842823601ef6469bfc,
         type: 3}
@@ -21029,6 +21099,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6038673646720299723, guid: 1cf2874af159f9842823601ef6469bfc,
         type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 6038673646720299723, guid: 1cf2874af159f9842823601ef6469bfc,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -21160,6 +21235,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6038673646720299723, guid: 1cf2874af159f9842823601ef6469bfc,
         type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 6038673646720299723, guid: 1cf2874af159f9842823601ef6469bfc,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -21257,6 +21337,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wall (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6038673646720299723, guid: 1cf2874af159f9842823601ef6469bfc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6038673646720299723, guid: 1cf2874af159f9842823601ef6469bfc,
         type: 3}
@@ -21667,6 +21752,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wall (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6038673646720299723, guid: 1cf2874af159f9842823601ef6469bfc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6038673646720299723, guid: 1cf2874af159f9842823601ef6469bfc,
         type: 3}
@@ -23067,6 +23157,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6038673646720299723, guid: 1cf2874af159f9842823601ef6469bfc,
         type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 6038673646720299723, guid: 1cf2874af159f9842823601ef6469bfc,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -23164,6 +23259,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wall (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6038673646720299723, guid: 1cf2874af159f9842823601ef6469bfc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6038673646720299723, guid: 1cf2874af159f9842823601ef6469bfc,
         type: 3}
@@ -23267,7 +23367,7 @@ GameObject:
   - component: {fileID: 1482461565}
   m_Layer: 0
   m_Name: Cube (3)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23724,7 +23824,7 @@ GameObject:
   - component: {fileID: 1542998464}
   m_Layer: 0
   m_Name: Body
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -25494,6 +25594,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6038673646720299723, guid: 1cf2874af159f9842823601ef6469bfc,
         type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 6038673646720299723, guid: 1cf2874af159f9842823601ef6469bfc,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -25782,6 +25887,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wall (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6038673646720299723, guid: 1cf2874af159f9842823601ef6469bfc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6038673646720299723, guid: 1cf2874af159f9842823601ef6469bfc,
         type: 3}
@@ -26359,6 +26469,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6038673646720299723, guid: 1cf2874af159f9842823601ef6469bfc,
         type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 6038673646720299723, guid: 1cf2874af159f9842823601ef6469bfc,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -26456,6 +26571,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wall (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6038673646720299723, guid: 1cf2874af159f9842823601ef6469bfc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6038673646720299723, guid: 1cf2874af159f9842823601ef6469bfc,
         type: 3}
@@ -31902,6 +32022,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wall (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6038673646720299723, guid: 1cf2874af159f9842823601ef6469bfc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6038673646720299723, guid: 1cf2874af159f9842823601ef6469bfc,
         type: 3}
@@ -38007,7 +38132,7 @@ GameObject:
   - component: {fileID: 3670130992859398433}
   m_Layer: 0
   m_Name: Wall (24)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -38451,6 +38576,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6038673646720299723, guid: 1cf2874af159f9842823601ef6469bfc,
         type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 6038673646720299723, guid: 1cf2874af159f9842823601ef6469bfc,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -38536,7 +38666,7 @@ GameObject:
   - component: {fileID: 6546395713722031776}
   m_Layer: 0
   m_Name: Room_Traditional_Door
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

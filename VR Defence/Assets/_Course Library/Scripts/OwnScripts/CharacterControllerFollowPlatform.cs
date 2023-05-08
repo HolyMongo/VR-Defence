@@ -3,10 +3,20 @@ public class CharacterControllerFollowPlatform : MonoBehaviour
 {
     private Vector3 platformVelocity;
 
+    private Vector3 playerScale;
+
+    private void Start()
+    {
+        // Store the initial scale of the player
+        playerScale = transform.localScale;
+    }
+
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
+       
         if (hit.transform.tag == "Platform")
         {
+           
             Rigidbody platformRigidbody = hit.transform.GetComponent<Rigidbody>();
             if (platformRigidbody != null)
             {
@@ -37,6 +47,7 @@ public class CharacterControllerFollowPlatform : MonoBehaviour
         {
             // Remove the player as a child of the platform
             transform.parent = null;
+            transform.localScale = playerScale;
         }
     }
 

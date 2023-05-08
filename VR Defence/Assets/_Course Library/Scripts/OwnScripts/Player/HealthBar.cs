@@ -31,15 +31,21 @@ public class HealthBar : MonoBehaviour
 
     public void TakeDamage(float _damage)
     {
-        slider.value -= _damage;
-        barText.text = slider.value + "/" + slider.maxValue;
+        if (canvas != null)
+        {
+            slider.value -= _damage;
+            barText.text = slider.value + "/" + slider.maxValue;
+        }
     }
 
     private void LateUpdate()
     {
         if(enemySo != null)
         {
-            canvas.transform.LookAt(canvas.transform.position + cam.transform.forward);
+            if (canvas != null)
+            {
+                canvas.transform.LookAt(canvas.transform.position + cam.transform.forward);
+            }
         }
     }
 }
