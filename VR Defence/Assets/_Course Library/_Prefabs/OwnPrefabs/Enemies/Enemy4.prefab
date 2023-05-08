@@ -95,11 +95,11 @@ GameObject:
   - component: {fileID: 7221726643091908222}
   - component: {fileID: 5872878878407357590}
   - component: {fileID: 6961569885657609579}
-  - component: {fileID: 6715398253316420370}
-  - component: {fileID: 3826951545348877570}
   - component: {fileID: 6619235836454452006}
+  - component: {fileID: 907124003}
+  - component: {fileID: 907124004}
   m_Layer: 0
-  m_Name: RealMushroomEnemy4
+  m_Name: Enemy4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -182,7 +182,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6480109209814030245}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 1000
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -190,33 +190,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!135 &6715398253316420370
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6480109209814030245}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.58647823
-  m_Center: {x: -0.002242893, y: 0.57, z: 0.009431243}
---- !u!114 &3826951545348877570
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6480109209814030245}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23de85a2c811df84e9eed923ff6176b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 7
-  chase: 3
 --- !u!114 &6619235836454452006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -232,3 +205,28 @@ MonoBehaviour:
   enemy: {fileID: 0}
   hpBar: {fileID: 0}
   shouldUseSpawner: 0
+--- !u!114 &907124003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6480109209814030245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c13670c15be9c7b428bd3b756866de33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &907124004
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6480109209814030245}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.72, y: 0.8836432, z: 0.8}
+  m_Center: {x: -0.0022428932, y: 0.44511524, z: 0.009431244}
