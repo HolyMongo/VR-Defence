@@ -128,4 +128,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weapon: {fileID: 11400000, guid: 9ad9539a9ed0d164ca2a26864ddab8c9, type: 2}
-  lifeTimer: 0
+  lifeTimer: 5

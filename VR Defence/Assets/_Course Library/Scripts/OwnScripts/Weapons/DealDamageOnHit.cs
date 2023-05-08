@@ -12,7 +12,7 @@ public class DealDamageOnHit : MonoBehaviour
         {
             lifeTimer = 2;
         }
-        StartCoroutine("LifeTime");
+        Invoke("LifeTime", lifeTimer);
     }
     private void OnCollisionEnter(Collision collision)
     {
@@ -25,11 +25,15 @@ public class DealDamageOnHit : MonoBehaviour
         {
             Destroy(transform.gameObject);
         }
+        if (collision.collider.CompareTag("Player"))
+        {
+            GameObject player = collision.collider.gameObject;
+            player.GetComponent<HealthAndAttack>().TakeDamage(weapon.Attack());
+        }
     }
 
-    IEnumerable LifeTime()
-    {
-        yield return new WaitForSeconds(lifeTimer);
+    public void LifeTime()
+    {    
         Destroy(transform.gameObject);
     }
 }
