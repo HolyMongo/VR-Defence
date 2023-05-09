@@ -36,7 +36,7 @@ public class Grenade : MonoBehaviour
              beforeExploading -= Time.deltaTime;
             
            
-            if (0 >= beforeExploading)  // Replace 'x' with the desired number of seconds
+            if (0 >= beforeExploading)  
             {
                 Explode();
             }
