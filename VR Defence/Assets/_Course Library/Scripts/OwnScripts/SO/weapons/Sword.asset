@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39de2259349cfd140b50de98353d2b49, type: 3}
   m_Name: Sword
   m_EditorClassIdentifier: 
-  attack: 0
+  attack: 15

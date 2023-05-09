@@ -16,6 +16,7 @@ TagManager:
   - Hand
   - Cube
   - Trail
+  - Bullet
   layers:
   - Default
   - TransparentFX
