@@ -20,6 +20,7 @@ public class DealDamageOnHit : MonoBehaviour
         {
             GameObject enemy = collision.collider.gameObject;
             enemy.GetComponent<HealthAndAttack>().TakeDamage(weapon.Attack());
+            Destroy(transform.gameObject);
         }
         else if (collision.collider.CompareTag("Ground"))
         {
@@ -29,6 +30,7 @@ public class DealDamageOnHit : MonoBehaviour
         {
             GameObject player = collision.collider.gameObject;
             player.GetComponent<HealthAndAttack>().TakeDamage(weapon.Attack());
+            Destroy(transform.gameObject);
         }
     }
 
