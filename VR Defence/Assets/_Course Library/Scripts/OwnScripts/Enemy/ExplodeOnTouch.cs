@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class ExplodeOnTouch : MonoBehaviour
 {
+    public GameObject pH; 
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.collider.CompareTag("Player"))
         {
-            Debug.Log("Explode");
+            Instantiate(pH, transform.position, Quaternion.identity);
+            Destroy(gameObject);
         }
     }
 }
