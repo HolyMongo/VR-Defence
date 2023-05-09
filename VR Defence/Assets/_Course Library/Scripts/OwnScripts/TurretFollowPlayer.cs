@@ -21,6 +21,7 @@ public class TurretFollowPlayer : MonoBehaviour
     private bool isShooting = false;
     public GameObject gun;
     public GameObject gunPoint;
+    public float shootingSpeed = 15f;
 
     //Text
     [SerializeField] TextMeshProUGUI barText;
@@ -121,7 +122,7 @@ public class TurretFollowPlayer : MonoBehaviour
         // Instantiate and shoot a projectile towards the player
         GameObject projectile = Instantiate(projectilePrefab, gunPoint.transform.position, Quaternion.identity);
         Vector3 directionToPlayer = (playerPos.transform.position - transform.position).normalized;
-        projectile.GetComponent<Rigidbody>().velocity = directionToPlayer * 10f;
+        projectile.GetComponent<Rigidbody>().velocity = directionToPlayer * shootingSpeed;
 
     }
     void OnDrawGizmosSelected()
