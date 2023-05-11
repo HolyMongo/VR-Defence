@@ -15,6 +15,10 @@ public class Grenade : MonoBehaviour
     [SerializeField] TextMeshProUGUI barText;
     public GameObject barObj;
 
+    // Audio
+    [Header("Audio")]
+  //  [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip audioClip;
     void Start()
     {
        // timer = 0;
@@ -51,6 +55,7 @@ public class Grenade : MonoBehaviour
     void Explode()
     {
         Instantiate(pS, transform.position, Quaternion.identity);
+        AudioSource.PlayClipAtPoint(audioClip, transform.position);
         Destroy(gameObject);
     }
 }
