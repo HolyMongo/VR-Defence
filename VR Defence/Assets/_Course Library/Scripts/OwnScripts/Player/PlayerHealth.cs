@@ -9,10 +9,12 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private PlayerSO playerSo;
     [SerializeField] HealthBar hpBar;
     private float hp;
+    private float startHp;
 
     void Start()
     {
-        hp = playerSo.Hp();    
+        hp = playerSo.Hp();
+        startHp = hp;
     }
 
 
@@ -24,6 +26,15 @@ public class PlayerHealth : MonoBehaviour
         {
             Death();
         }
+    }
+
+    public void GainHealth(float _health)
+    {      
+        if(hp < startHp)
+        {
+            hp += _health;
+            hpBar.GainHealth(_health);
+        }     
     }
 
     private void Death()

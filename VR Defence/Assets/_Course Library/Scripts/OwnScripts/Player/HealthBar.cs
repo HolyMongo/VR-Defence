@@ -38,6 +38,15 @@ public class HealthBar : MonoBehaviour
         }
     }
 
+    public void GainHealth(float _health)
+    {
+        if(canvas != null)
+        {
+            slider.value += _health;
+            barText.text = slider.value + "/" + slider.maxValue;
+        }
+    }
+
     private void LateUpdate()
     {
         if(enemySo != null)
