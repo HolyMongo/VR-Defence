@@ -14829,6 +14829,11 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5831469218289275650, guid: ca91eb333f1bb914ca12716c24ba31b8,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.84
+      objectReference: {fileID: 0}
     - target: {fileID: 5831469218560576611, guid: ca91eb333f1bb914ca12716c24ba31b8,
         type: 3}
       propertyPath: m_Antialiasing
