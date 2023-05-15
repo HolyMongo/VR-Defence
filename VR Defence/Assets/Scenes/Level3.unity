@@ -36504,7 +36504,7 @@ MonoBehaviour:
   collisionLayer:
     serializedVersion: 2
     m_Bits: 64
-  fadeSpeed: 1
+  fadeSpeed: 10
   sphereCheckSize: 0.15
 --- !u!23 &1147999498
 MeshRenderer:
