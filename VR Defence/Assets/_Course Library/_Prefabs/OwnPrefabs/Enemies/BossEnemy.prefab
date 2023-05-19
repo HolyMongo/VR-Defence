@@ -99,6 +99,7 @@ GameObject:
   - component: {fileID: 9073654066670907648}
   - component: {fileID: -2852531387443340517}
   - component: {fileID: 2348449924973862887}
+  - component: {fileID: 9028671813467651778}
   m_Layer: 7
   m_Name: BossEnemy
   m_TagString: Enemy
@@ -218,6 +219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23de85a2c811df84e9eed923ff6176b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  navMeshAgent: {fileID: 0}
   speed: 7
   chase: 10
 --- !u!114 &-2852531387443340517
@@ -253,6 +255,28 @@ MonoBehaviour:
   slider: {fileID: 5738361214542014632}
   barText: {fileID: 1897209389867778320}
   cam: {fileID: 0}
+--- !u!195 &9028671813467651778
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259517555445694787}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5959094
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1.7738736
+  m_BaseOffset: 0.8869368
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &2914156417259240945
 GameObject:
   m_ObjectHideFlags: 0
