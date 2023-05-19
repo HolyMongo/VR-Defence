@@ -10231,6 +10231,16 @@ PrefabInstance:
       propertyPath: chase
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 9073654066670907654, guid: 294ae9333550527498dc0f77832782fa,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 9073654066670907655, guid: 294ae9333550527498dc0f77832782fa,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 294ae9333550527498dc0f77832782fa, type: 3}
 --- !u!1 &263011985
