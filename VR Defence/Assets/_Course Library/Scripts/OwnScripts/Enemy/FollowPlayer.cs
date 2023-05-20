@@ -62,7 +62,8 @@ public class FollowPlayer : MonoBehaviour
                 transform.LookAt(playerPos.transform);
                 isChasing = true;
                 Vector3 moveDir = playerPos.transform.position - transform.position;
-                rB.velocity = new Vector3(moveDir.x, rB.velocity.y, moveDir.z).normalized * speed;
+
+                rB.AddForce(moveDir.normalized * speed);
             }
             else
             {
