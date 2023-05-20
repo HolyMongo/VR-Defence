@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FollowPlayer : MonoBehaviour
 {
-    HealthAndAttack hAA;
+   
     GameObject playerPos;
     Rigidbody rB;
     [SerializeField] float speed = 5;
@@ -12,28 +12,13 @@ public class FollowPlayer : MonoBehaviour
     private bool isChasing = false;
 
 
-    //Wander
-    //private bool isWandering = false;
-    //private bool isRotatingLeft = false;
-    //private bool isRotatingRight = false;
-    //private bool isWalking = false;
+   
 
     void Start()
     {
         playerPos = GameObject.Find("XR Rig");
         rB = GetComponent<Rigidbody>();
-        if (hAA == null)
-        {
-            try
-            {
-                hAA = GetComponent<HealthAndAttack>();
-            }
-            catch (System.Exception)
-            {
-                Debug.Log("failed to get component!");
-                throw;
-            }
-        }
+        
     }
 
 
@@ -41,7 +26,7 @@ public class FollowPlayer : MonoBehaviour
     {
         if (!isChasing)
         {
-          //  StartCoroutine(Wander());
+            Wander();
         }
         ChasePlayer();
 
@@ -53,9 +38,7 @@ public class FollowPlayer : MonoBehaviour
 
     public void ChasePlayer()
     {
-        if (hAA != null)
-        {
-
+        
             float toClose = Vector3.Distance(playerPos.transform.position, transform.position);
             if (toClose <= chase)
             {
@@ -63,50 +46,18 @@ public class FollowPlayer : MonoBehaviour
                 isChasing = true;
                 Vector3 moveDir = playerPos.transform.position - transform.position;
 
-                rB.AddForce(moveDir.normalized * speed);
+                rB.AddForce(moveDir.normalized * speed, ForceMode.Force);
             }
             else
             {
                 isChasing = false;
             }
-        }
+       
     }
-  //  IEnumerator Wander()
-    //{
-    //    int rotationTime = Random.Range(1, 3);
-    //    int rotateWait = Random.Range(1, 3);
-    //    int rotateRange = Random.Range(1, 2);
-    //    int walkWait = Random.Range(1, 3);
-    //    int walkTime = Random.Range(1, 3);
+    public void Wander()
+    {
 
-    //    isWandering = true;
-
-    //    yield return new WaitForSeconds(walkWait);
-
-    //    isWalking = true;
-
-    //    yield return new WaitForSeconds(walkTime);
-
-    //    isWalking = false;
-
-    //    yield return new WaitForSeconds(rotateWait);
-
-    //    if(rotateRange == 1)
-    //    {
-    //        isRotatingLeft = true;
-    //        yield return new WaitForSeconds(rotationTime);
-    //        isRotatingLeft = false;
-    //    }
-    //    if (rotateRange == 2)
-    //    {
-    //        isRotatingRight = true;
-    //        yield return new WaitForSeconds(rotationTime);
-    //        isRotatingRight = false;
-    //    }
-
-    //    isWandering = false;
-
-    //}
+    }
 
     void OnDrawGizmosSelected()
     {
