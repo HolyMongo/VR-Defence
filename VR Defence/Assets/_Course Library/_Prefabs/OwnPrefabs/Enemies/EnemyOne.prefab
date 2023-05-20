@@ -250,6 +250,7 @@ MonoBehaviour:
   enemy: {fileID: 11400000, guid: 986ccf696e219cb4a977d87424c78329, type: 2}
   hpBar: {fileID: 2348449924973862887}
   shouldUseSpawner: 1
+  obj: {fileID: 8788693678721193994, guid: ac8f2245adec11847a57d522660b05c9, type: 3}
 --- !u!114 &2348449924973862887
 MonoBehaviour:
   m_ObjectHideFlags: 0

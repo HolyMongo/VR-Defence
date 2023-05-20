@@ -21,6 +21,9 @@ public class HealthAndAttack : MonoBehaviour
     private SpawnEntity EntityTower;
 
     [SerializeField] private bool shouldUseSpawner = false;
+
+    //Obj to instantiate when dying
+    [SerializeField] private GameObject obj;
     void Start()
     {
         hp = enemy.Hp();
@@ -98,6 +101,11 @@ public class HealthAndAttack : MonoBehaviour
                     Debug.Log("Decreasing");
                     EntityTower.OnEnemyDeath();
                 }
+                if(obj != null)
+                {
+                    Instantiate(obj, transform.position, Quaternion.identity);
+                }
+               
                 Destroy(gameObject);                       
             }
 

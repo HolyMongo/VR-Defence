@@ -657,6 +657,7 @@ MonoBehaviour:
   enemy: {fileID: 11400000, guid: c3f4fdb61bbab6c45b8781cc895d89d2, type: 2}
   hpBar: {fileID: 1946879183590939805}
   shouldUseSpawner: 0
+  obj: {fileID: 8788693678721193994, guid: ac8f2245adec11847a57d522660b05c9, type: 3}
 --- !u!114 &1946879183590939805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -803,6 +804,7 @@ MonoBehaviour:
   enemy: {fileID: 11400000, guid: c3f4fdb61bbab6c45b8781cc895d89d2, type: 2}
   hpBar: {fileID: 0}
   shouldUseSpawner: 0
+  obj: {fileID: 0}
 --- !u!65 &6119908208384177293
 BoxCollider:
   m_ObjectHideFlags: 0

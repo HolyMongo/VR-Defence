@@ -626,6 +626,7 @@ MonoBehaviour:
   enemy: {fileID: 11400000, guid: 43093004d3a5c03429e8fc393e312ddb, type: 2}
   hpBar: {fileID: 0}
   shouldUseSpawner: 0
+  obj: {fileID: 0}
 --- !u!1001 &22666467
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9819,6 +9820,7 @@ MonoBehaviour:
   enemy: {fileID: 11400000, guid: 43093004d3a5c03429e8fc393e312ddb, type: 2}
   hpBar: {fileID: 0}
   shouldUseSpawner: 0
+  obj: {fileID: 0}
 --- !u!1001 &211657715
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11824,6 +11826,7 @@ MonoBehaviour:
   enemy: {fileID: 11400000, guid: 43093004d3a5c03429e8fc393e312ddb, type: 2}
   hpBar: {fileID: 0}
   shouldUseSpawner: 0
+  obj: {fileID: 0}
 --- !u!1 &293168773
 GameObject:
   m_ObjectHideFlags: 0
@@ -20655,6 +20658,7 @@ MonoBehaviour:
   enemy: {fileID: 11400000, guid: 43093004d3a5c03429e8fc393e312ddb, type: 2}
   hpBar: {fileID: 0}
   shouldUseSpawner: 0
+  obj: {fileID: 0}
 --- !u!1001 &664589553
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25079,6 +25083,7 @@ MonoBehaviour:
   enemy: {fileID: 11400000, guid: 35f071b2c44aafa42a6c5726cfb2b1bc, type: 2}
   hpBar: {fileID: 0}
   shouldUseSpawner: 0
+  obj: {fileID: 0}
 --- !u!114 &788145331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25649,6 +25654,7 @@ MonoBehaviour:
   enemy: {fileID: 11400000, guid: 43093004d3a5c03429e8fc393e312ddb, type: 2}
   hpBar: {fileID: 0}
   shouldUseSpawner: 0
+  obj: {fileID: 0}
 --- !u!1001 &822675444
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28346,6 +28352,7 @@ MonoBehaviour:
   enemy: {fileID: 11400000, guid: 43093004d3a5c03429e8fc393e312ddb, type: 2}
   hpBar: {fileID: 0}
   shouldUseSpawner: 0
+  obj: {fileID: 0}
 --- !u!1001 &907124000
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28468,6 +28475,12 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
+    - target: {fileID: 4571674515768700113, guid: b0ddb85628d97b445bcd69172dcc0f99,
+        type: 3}
+      propertyPath: obj
+      value: 
+      objectReference: {fileID: 8788693678721193994, guid: dcb8c166d57a1724999bf6ade94b9f29,
+        type: 3}
     - target: {fileID: 4571674515768700113, guid: b0ddb85628d97b445bcd69172dcc0f99,
         type: 3}
       propertyPath: shouldUseSpawner
@@ -29757,6 +29770,7 @@ MonoBehaviour:
   enemy: {fileID: 11400000, guid: 43093004d3a5c03429e8fc393e312ddb, type: 2}
   hpBar: {fileID: 0}
   shouldUseSpawner: 0
+  obj: {fileID: 0}
 --- !u!1001 &941835991
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50943,6 +50957,7 @@ MonoBehaviour:
   enemy: {fileID: 11400000, guid: 35f071b2c44aafa42a6c5726cfb2b1bc, type: 2}
   hpBar: {fileID: 0}
   shouldUseSpawner: 0
+  obj: {fileID: 0}
 --- !u!114 &1302157280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64827,6 +64842,7 @@ MonoBehaviour:
   enemy: {fileID: 11400000, guid: 43093004d3a5c03429e8fc393e312ddb, type: 2}
   hpBar: {fileID: 0}
   shouldUseSpawner: 0
+  obj: {fileID: 0}
 --- !u!1 &1655108177
 GameObject:
   m_ObjectHideFlags: 0
@@ -72039,6 +72055,7 @@ MonoBehaviour:
   enemy: {fileID: 11400000, guid: 43093004d3a5c03429e8fc393e312ddb, type: 2}
   hpBar: {fileID: 0}
   shouldUseSpawner: 0
+  obj: {fileID: 0}
 --- !u!1001 &1891761029
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -75935,6 +75952,7 @@ MonoBehaviour:
   enemy: {fileID: 11400000, guid: 43093004d3a5c03429e8fc393e312ddb, type: 2}
   hpBar: {fileID: 0}
   shouldUseSpawner: 0
+  obj: {fileID: 0}
 --- !u!1 &2019201131
 GameObject:
   m_ObjectHideFlags: 0
@@ -76440,6 +76458,7 @@ MonoBehaviour:
   enemy: {fileID: 11400000, guid: 43093004d3a5c03429e8fc393e312ddb, type: 2}
   hpBar: {fileID: 0}
   shouldUseSpawner: 0
+  obj: {fileID: 0}
 --- !u!1001 &2035514336
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -77267,6 +77286,7 @@ MonoBehaviour:
   enemy: {fileID: 11400000, guid: 35f071b2c44aafa42a6c5726cfb2b1bc, type: 2}
   hpBar: {fileID: 0}
   shouldUseSpawner: 0
+  obj: {fileID: 0}
 --- !u!114 &2067776187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -93696,6 +93716,7 @@ MonoBehaviour:
   enemy: {fileID: 11400000, guid: aff9b5773f726d744b7cae75363ea563, type: 2}
   hpBar: {fileID: 0}
   shouldUseSpawner: 0
+  obj: {fileID: 0}
 --- !u!1 &5320377130133274901
 GameObject:
   m_ObjectHideFlags: 0
