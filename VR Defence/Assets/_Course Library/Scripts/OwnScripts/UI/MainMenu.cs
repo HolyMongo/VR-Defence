@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    [SerializeField] List<string> _scenes = new List<string>();
+   // [SerializeField] List<string> _scenes = new List<string>();
     // Start is called before the first frame update
     void Start()
     {
@@ -17,12 +17,12 @@ public class MainMenu : MonoBehaviour
     {
         
     }
-    public void PlayTutorial()
+    public void LoadTheNextScene(int sceneToLoad)
     {
-        SceneManager.LoadScene(_scenes[0]);
+        SceneManager.LoadSceneAsync(sceneToLoad);
     }
-    public void PlayLevel2()
-    {
-        SceneManager.LoadScene(_scenes[2]);
-    }
+    //public void PlayLevel2()
+    //{
+    //    SceneManager.LoadScene(_scenes[2]);
+    //}
 }
