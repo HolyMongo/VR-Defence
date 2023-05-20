@@ -29,7 +29,7 @@ public class DealDamageOnHit : MonoBehaviour
         if (collision.collider.CompareTag("Player"))
         {
             GameObject player = collision.collider.gameObject;
-            player.GetComponent<HealthAndAttack>().TakeDamage(weapon.Attack());
+            player.GetComponent<PlayerHealth>().TakeDamage(weapon.Attack());
             Destroy(transform.gameObject);
         }
     }
