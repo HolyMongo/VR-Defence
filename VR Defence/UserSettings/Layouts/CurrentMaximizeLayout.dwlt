@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 66566
+  controlID: 91156
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 66567
+  controlID: 91157
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -168,7 +168,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 66568
+  controlID: 91158
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -226,10 +226,10 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 1c41efff
-      m_LastClickedID: -1097444
-      m_ExpandedIDs: 2a48efffae9eefff50c9efff64ccefff24f7efffc64df0ff4ad6f0ff8cedf0ffb2f9f0ff84dbf1ffe685f2ffc83bf3ff4c95f3ff5695f3ff7895f3ff8e95f3ff58a1f3ffea3df4ff7470f4fff0e8f5ffbcc6f6ff06d5f6ff967ef8ff5881f8ff00a0f8ff50a7f8ff56dff8ff5293f9ffa098f9ff580ffaff28e1faffee0bfbff2239fbffe2adfbffb2e6fbffe01ffcff1e25fcff1a50fcff76abfcfff2ebfcff3c15fffff6f9ffff8e820000de850000c071060088ba0600e2bb0600f03b070006ff07001aa60800eea808006ad10800f01f0b00fa200b0098210b0050230b0072240b00bc250b0002ea0b001ef60b000e2910008a2c1000262d1000802e1000eaf4100020fc100086ff100006011100bc301200ce40120066551200e85a12002aa31200
+      scrollPos: {x: 0, y: 254}
+      m_SelectedIDs: c4f8ebff
+      m_LastClickedID: -1312572
+      m_ExpandedIDs: 2c10ebff3610ebff7610ebff8cf7ebffc4f8ebff86fcebffd058ecffb000edff9c07edff1061edff96e3edff1a3aeeff1a99eeff12cbeeff8e28efff9228efff2a48efffae9eefff50c9efff64ccefff24f7efffc64df0ff4ad6f0ff8cedf0ffb2f9f0ff84dbf1ffe685f2ffc83bf3ff4c95f3ff5695f3ff7895f3ff8e95f3ff58a1f3ffea3df4ff7470f4fff0e8f5ffbcc6f6ff06d5f6ff967ef8ff5881f8ff00a0f8ff50a7f8ff56dff8ff5293f9ffa098f9ff580ffaff28e1faffee0bfbff2239fbffe2adfbffb2e6fbffe01ffcff1e25fcff1a50fcff76abfcfff2ebfcff3c15fffff6f9ffff8e820000de850000c071060088ba0600e2bb0600f03b070006ff07001aa60800eea808006ad10800f01f0b00fa200b0098210b0050230b0072240b00bc250b0002ea0b001ef60b000e2910008a2c1000262d1000802e1000eaf4100020fc100086ff100006011100bc301200ce40120066551200e85a1200669d1200a89d1200209e1200109f1200849f12009a9f120036a01200eaa0120072a21200faa212002aa3120072101400d01d1400822b14000835140010361400703a1400ca5d1400345e1400
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -245,7 +245,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 10}
+        m_ClientGUIView: {fileID: 5}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -325,9 +325,9 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: -141, y: -215.66666}
+      snapOffset: {x: 101, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 3
+      snapCorner: 0
       id: unity-grid-and-snap-toolbar
       index: 1
       layout: 1
@@ -528,9 +528,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -65.75335, y: 22.728302, z: -15.583194}
+    m_Target: {x: -55.03287, y: -6.7956247, z: -116.824394}
     speed: 2
-    m_Value: {x: -65.75335, y: 22.728302, z: -15.583194}
+    m_Value: {x: -55.03287, y: -6.7956247, z: -116.824394}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -577,13 +577,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.14830075, y: 0.60105586, z: -0.12614729, w: 0.7772224}
+    m_Target: {x: 0.10101736, y: -0.8657622, z: 0.1614398, w: 0.4662492}
     speed: 2
-    m_Value: {x: 0.14806043, y: 0.60008186, z: -0.12594286, w: 0.7759629}
+    m_Value: {x: 0.10109779, y: -0.86368114, z: 0.16103068, w: 0.4668011}
   m_Size:
-    m_Target: 7.0953474
+    m_Target: 16.7499
     speed: 2
-    m_Value: 7.0953474
+    m_Value: 16.7499
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -810,21 +810,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/_Course Library/Scripts/OwnScripts/Enemy
+    - Assets/_Course Library/_Prefabs/OwnPrefabs
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 66
   m_LastFolders:
-  - Assets/_Course Library/Scripts/OwnScripts/Enemy
+  - Assets/_Course Library/_Prefabs/OwnPrefabs
   m_LastFoldersGridSize: 66
   m_LastProjectPath: D:\Unity Games\Github\2DGAMEWHATELSE\VR-Defence\VR Defence
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 802}
-    m_SelectedIDs: a09f0000
-    m_LastClickedID: 40864
+    scrollPos: {x: 0, y: 271}
+    m_SelectedIDs: a49e0000
+    m_LastClickedID: 40612
     m_ExpandedIDs: 00000000a29e0000a49e0000a69e0000a89e0000aa9e0000ac9e0000ae9e0000cc9e0000669f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -878,8 +878,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 1c41efff
-    m_LastClickedInstanceID: -1097444
+    m_SelectedInstanceIDs: c4f8ebff
+    m_LastClickedInstanceID: -1312572
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000ea6200004c63000016820000ee86000038870000
     m_RenameOverlay:
@@ -969,7 +969,7 @@ MonoBehaviour:
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -1097444
+  m_LastSelectedObjectID: -1311810
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
