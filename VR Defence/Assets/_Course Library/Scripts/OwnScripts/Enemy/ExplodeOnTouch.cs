@@ -13,4 +13,12 @@ public class ExplodeOnTouch : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            Instantiate(pH, transform.position, Quaternion.identity);
+            Destroy(gameObject);
+        }
+    }
 }
