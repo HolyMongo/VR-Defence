@@ -347,10 +347,10 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3391477076886608672}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.7
   m_Center: {x: -0.002242893, y: 0.5, z: 0.009431243}
 --- !u!54 &4865680528398084965
 Rigidbody:
@@ -415,6 +415,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pH: {fileID: 2125793770980415548, guid: 5965fd4bb582c2247aa770f95968f5e9, type: 3}
+  useEnter: 1
+  useTrigger: 0
+  shouldUseSpawner: 1
 --- !u!114 &4497485129596849531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -465,7 +468,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 40
-  chase: 6
+  chase: 10
 --- !u!1 &3857837028576901688
 GameObject:
   m_ObjectHideFlags: 0

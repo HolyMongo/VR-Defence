@@ -282,6 +282,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pH: {fileID: 2125793770980415548, guid: 5965fd4bb582c2247aa770f95968f5e9, type: 3}
+  useEnter: 1
+  useTrigger: 0
+  shouldUseSpawner: 1
 --- !u!1 &2914156417259240945
 GameObject:
   m_ObjectHideFlags: 0

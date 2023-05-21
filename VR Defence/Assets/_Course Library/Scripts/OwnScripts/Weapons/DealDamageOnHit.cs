@@ -34,6 +34,26 @@ public class DealDamageOnHit : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Enemy"))
+        {
+            GameObject enemy = other.gameObject;
+            enemy.GetComponent<HealthAndAttack>().TakeDamage(weapon.Attack());
+            Destroy(transform.gameObject);
+        }
+        else if (other.CompareTag("Ground"))
+        {
+            Destroy(transform.gameObject);
+        }
+        if (other.CompareTag("Player"))
+        {
+            GameObject player = other.gameObject;
+            player.GetComponent<PlayerHealth>().TakeDamage(weapon.Attack());
+            Destroy(transform.gameObject);
+        }
+    }
+
     public void LifeTime()
     {    
         Destroy(transform.gameObject);
