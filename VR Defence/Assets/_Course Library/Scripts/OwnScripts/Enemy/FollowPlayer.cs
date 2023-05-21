@@ -12,7 +12,7 @@ public class FollowPlayer : MonoBehaviour
     private bool isChasing = false;
 
 
-   
+    float toClose;
 
     void Start()
     {
@@ -24,26 +24,29 @@ public class FollowPlayer : MonoBehaviour
 
     void Update()
     {
+          toClose = Vector3.Distance(playerPos.transform.position, transform.position);
+
         if (!isChasing)
         {
             Wander();
         }
-        ChasePlayer();
+        else if(isChasing)
+        {
+            ChasePlayer();
+        }
+       
 
     }
-    private void OnCollisionEnter(Collision collision) // Add enemy damage player?
-    {
-
-    }
+    
 
     public void ChasePlayer()
     {
         
-            float toClose = Vector3.Distance(playerPos.transform.position, transform.position);
+          //  float toClose = Vector3.Distance(playerPos.transform.position, transform.position);
             if (toClose <= chase)
             {
                 transform.LookAt(playerPos.transform);
-                isChasing = true;
+                
                 Vector3 moveDir = playerPos.transform.position - transform.position;
 
                 rB.AddForce(moveDir.normalized * speed, ForceMode.Force);
@@ -56,8 +59,17 @@ public class FollowPlayer : MonoBehaviour
     }
     public void Wander()
     {
-
+        if(toClose <= chase)
+        {
+            isChasing = true;
+        }
+        else
+        {
+           
+        }
     }
+
+    
 
     void OnDrawGizmosSelected()
     {
