@@ -85,6 +85,20 @@ public class HealthAndAttack : MonoBehaviour
             */
         }
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            GameObject player = other.gameObject;
+            Debug.Log("Hit player");
+            playerHp = player.GetComponent<PlayerHealth>();
+            playerHp.TakeDamage(attack);
+            /*
+            PlayerHp playerhp = player.GetComponent<PlayerHp>();
+            playerhp.Hp -= attack;
+            */
+        }
+    }
     void Update()
     {
         if (isDissolving)
