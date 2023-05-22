@@ -347,7 +347,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3391477076886608672}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.7
@@ -415,8 +415,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pH: {fileID: 2125793770980415548, guid: 5965fd4bb582c2247aa770f95968f5e9, type: 3}
-  useEnter: 1
-  useTrigger: 0
+  useEnter: 0
+  useTrigger: 1
   shouldUseSpawner: 1
 --- !u!114 &4497485129596849531
 MonoBehaviour:
